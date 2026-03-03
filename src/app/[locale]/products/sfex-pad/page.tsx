@@ -1,36 +1,48 @@
 import ProductPageTemplate from "@/components/ProductPageTemplate";
+import { useTranslations } from "next-intl";
 
 export default function SfexPadPage() {
+  const t = useTranslations("ProductDetails.sfex-pad");
+
+  const overview = [t("overview.0"), t("overview.1")];
+  const features = [
+    t("features.0"),
+    t("features.1"),
+    t("features.2"),
+    t("features.3"),
+    t("features.4"),
+  ];
+  const caution = [t("caution.0"), t("caution.1"), t("caution.2")];
+
+  const specifications = [
+    {
+      title: t("specifications.0.title"),
+      items: [
+        { label: t("specifications.0.items.0.label"), value: t("specifications.0.items.0.value") },
+        { label: t("specifications.0.items.1.label"), value: t("specifications.0.items.1.value") },
+        { label: t("specifications.0.items.2.label"), value: t("specifications.0.items.2.value") },
+        { label: t("specifications.0.items.3.label"), value: t("specifications.0.items.3.value") },
+      ],
+    },
+    {
+      title: t("specifications.1.title"),
+      items: [
+        { label: t("specifications.1.items.0.label"), value: t("specifications.1.items.0.value") },
+        { label: t("specifications.1.items.1.label"), value: t("specifications.1.items.1.value") },
+        { label: t("specifications.1.items.2.label"), value: t("specifications.1.items.2.value") },
+        { label: t("specifications.1.items.3.label"), value: t("specifications.1.items.3.value") },
+      ],
+    },
+  ];
+
   return (
     <ProductPageTemplate
-      productName="SFEX Pad"
-      subtitle="Stand-alone Fire Extinguisher for Small Electric Panels"
-      overview={[
-        "The micro capsules react to specific temperatures and flames to suppress fires in the early stages.",
-        "SFEX Pad is a fire suppression pad designed specifically for use in small electrical enclosures.",
-        "It has an excellent cooling extinguishing method, allowing it to completely suppress fires with an immediate reaction during the initial ignition phase.",
-      ]}
-      features={[
-        "It has excellent performance in suppressing initial fires as it is installed on the inside top of small electric panels in a simple pad type.",
-        "The stand-alone polymer chemical-based system has no malfunction and requires no maintenance costs.",
-        "SFEX Powder: A temperature-sensitive powder consisting of an eco-friendly extinguishing agent, Perfluoro [2-methyl-3-pentanone], and subsidiary catalyst.",
-        "It does not affect the surrounding equipment after extinguishing.",
-        "Extinguishing method: Cooling + Chemical Reaction.",
-      ]}
-      caution={[
-        "The fire extinguishing agent in the pad, FK-5-1-12, has a gas density 11.4 times heavier than that of air.",
-        "This characteristic causes the extinguishing agent to be sprayed in a vertical form, which may not reach the fire at the bottom if there are obstacles between the fire and the pad.",
-        "As a result, top-mounted fire extinguishers may not perform well in panels with complex structures.",
-      ]}
-      specifications={[
-        { label: "Type", value: "Pad type (adhesive)" },
-        {
-          label: "Agent",
-          value: "FK-5-1-12 (Perfluoro [2-methyl-3-pentanone])",
-        },
-        { label: "Method", value: "Cooling + Chemical Reaction" },
-        { label: "Installation", value: "Top inside of small electric panel" },
-      ]}
+      productName={t("name")}
+      subtitle={t("subtitle")}
+      overview={overview}
+      features={features}
+      caution={caution}
+      specifications={specifications}
     />
   );
 }

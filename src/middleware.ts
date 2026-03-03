@@ -2,17 +2,11 @@ import createMiddleware from "next-intl/middleware";
 
 export default createMiddleware({
   locales: ["en", "tr"],
-  defaultLocale: "en",
+  defaultLocale: "tr",
   localeDetection: false,
   localePrefix: "always",
 });
 
 export const config = {
-  // Match all pathnames except for
-  // - /api (API routes)
-  // - /_next (Next.js internals)
-  // - /_static (inside /public)
-  // - /_vercel (Vercel internals)
-  // - All files inside /public (e.g. /favicon.ico)
-  matcher: ["/((?!api|_next|_static|_vercel|[\\w-]+\\.\\w+).*)"],
+  matcher: ["/((?!api|_next|_static|_vercel|partners|products|extras|certificates|bigCustomers|examples|productTabs|electric|cableFire|outletFire|battery|outputs|tables|[\\w-]+\\.\\w+).*)"],
 };

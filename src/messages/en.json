@@ -11,9 +11,12 @@
     "techApp": "Technology Application",
     "appPanel": "Electric Panel Fire",
     "appCable": "Cable Fire",
-    "appOutlet": "Electrical Outlet Fire",
+    "appOutlet": "Electrical Outlet Fires",
     "appBattery": "Battery Thermal Runaway",
-    "product": "Product Introduction"
+    "product": "Product Introduction",
+    "productCat1": "Initial Suppression of Electrical Fire",
+    "productCat2": "Refractory Materials Development",
+    "selectCategory": "Select a category to view products"
   },
   "Hero": {
     "title1": "Conquer the Ignition Point of Electrical Fire",
@@ -33,6 +36,7 @@
   },
   "Products": {
     "title": "Product Introduction",
+    "subtitle": "Introducing products that can confirm SFEXTECH technology.",
     "p1": "SFEX Line",
     "p1_desc": "An automatic fire extinguishing solution for fires in medium and large electric panels",
     "p2": "SFEX Pad",
@@ -82,17 +86,762 @@
     "whySfex7": "A stand-alone method that does not require additional equipment",
     "majorCustomerTitle": "Major Customer",
     "certPageTitle": "Certificate and Test Report",
+    "cableHorizontal": "1. Horizontal Zone : SFEX CT Manteau",
+    "cableVertical": "2. Vertical Zone : SFEX AP Tape",
+    "cableSolutionTitle": "SFEX Solution: SFEX CT Manteau / SFEX AP Tape",
+    "outletSolutionTitle": "SFEX Solution : SFEX Hi-100/ SFEX Inside",
+    "outletStickerTitle": "1. SFEX Hi-100 : Sticker Type Fire Extinguisher",
+    "outletInsideTitle": "2. SFEX Inside : Apply fire extinguishing agent inside the multi-socket.",
+    "batterySolutionTitle": "SFEX Solution : SFEX Thermal Barrier",
+    "batteryBulkhead": "1. Fireproof Bulkhead Between Battery Racks",
+    "batteryStorage": "2. Battery Storage Rack",
     "panelFireTitle": "Electric Panel Fire",
-    "panelFireHeading": "Fire inside the Electric Panel",
+    "panelFireHeading": "Electric Panel Fire",
     "cableFireTitle": "Cable Fire",
     "cableFireHeading": "Fire in the Cable",
     "outletFireTitle": "Electrical Outlet Fire",
-    "outletFireHeading": "Complete Prevention of Electrical Fire",
+    "outletFireHeading": "Electrical Outlet Fire",
     "batteryTitle": "Battery Thermal Runaway",
     "batteryHeading": "Battery Thermal Runaway Propagation Barrier",
     "overview": "Overview",
     "features": "Features",
     "specification": "Specification",
-    "caution": "Caution"
+    "caution": "Caution",
+    "howItWorks": "How it Works",
+    "howItWorks1": "Wrap the input/output cables with SFEX AP Tape 1.5 to 2 times.",
+    "howItWorks2": "It prevents the spread with its fire extinguishing and fire retardancy in the event of a fire.",
+    "howItWorks3": "It prevents the spread of the fire to the Cable Pit or other areas outside the electric panel.",
+    "solutionPadTitle": "SFEX Solution: SFEX Line / SFEX Pad",
+    "solutionPadDesc1": "Since most of the terminal blocks inside the electric panel are fire ignition points, the solution must be installed close to this area.",
+    "solutionPadDesc2": "SFEX Pad is designed to be attached to the top of the panel for perfect initial fire suppression.",
+    "solutionTapeTitle": "SFEX Solution: SFEX AP Tape",
+    "solutionTapeDesc1": "A poor connection of the terminal block inside an electric panel causes heating and fire. Even if the fire is initially suppressed, there is a high risk of re-ignition.",
+    "solutionTapeDesc2": "If the door of the electric panel is open, the fire suppression ability may be weakened and the fire may not be extinguished.",
+    "solutionTapeDesc3": "Therefore, a backup solution is essential to prevent fires from spreading through the input/output cables of the electric panel or from the outside cables of the electric panel into the inside.",
+    "ex1Title": "SFEX Line – For Ducted Areas :",
+    "ex1Desc1": "Install SFEX Line horizontally or vertically inside the duct closest to the anticipated ignition point.",
+    "ex1Desc2": "No need bracket, no damage to the electric panel for installation.",
+    "ex2Title": "SFEX Line – For Areas Without Ducts :",
+    "ex2Desc1": "Install SFEX Line horizontally or vertically inside the cable closest to the anticipated ignition point.",
+    "ex3Title": "SFEX Pad – For Small Panels :",
+    "ex3Desc1": "Simply attach SFEX Pad to the top inside of the electric panel.",
+    "exampleLabel": "Example",
+    "moreLogos": "more",
+    "historyContent": [
+      {
+        "year": "2023",
+        "events": [
+          {
+            "month": "07",
+            "text": "Established the Second Factory"
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "events": [
+          {
+            "month": "07",
+            "text": "Selected as a BRAND K, National Co-Brand by the Ministry of SMEs and Startups."
+          },
+          {
+            "month": "04",
+            "text": "Certified ISO 9001 and ISO 14001"
+          }
+        ]
+      },
+      {
+        "year": "2021",
+        "events": [
+          {
+            "month": "12",
+            "text": "Relocated the First Factory for Expansion"
+          },
+          {
+            "month": "08",
+            "text": "Signed a Collaboration and Exclusive Distribution Agreement with Firetrace International, A Halma Company"
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "events": [
+          {
+            "month": "01",
+            "text": "Registered on Tech Fi Net by the Defense Agency for Technology and Quality"
+          }
+        ]
+      },
+      {
+        "year": "2019",
+        "events": [
+          {
+            "month": "12",
+            "text": "Selected by the Ministry of National Defense for Military Use"
+          },
+          {
+            "month": "09",
+            "text": "Released SFEX AP(Arc Proof) Tape"
+          },
+          {
+            "month": "06",
+            "text": "Established the first plant of SFEX TECH Co., Ltd"
+          },
+          {
+            "month": "05",
+            "text": "Released SFEX CT(Cable Tray) Manteau"
+          }
+        ]
+      },
+      {
+        "year": "2018",
+        "events": [
+          {
+            "month": "11",
+            "text": "Released SFEX Line"
+          },
+          {
+            "month": "10",
+            "text": "Selected as a product to be preferentially purchased as well as an excellent invention by the Korea Invention Promotion Association"
+          },
+          {
+            "month": "08",
+            "text": "Patent: Outlet for fire protection (No. 10-1887396)"
+          },
+          {
+            "month": "06",
+            "text": "Won the Grand Prize at the '2018 New Safety Technology Exhibition' held by Korea Occupational Safety and Health Agency"
+          }
+        ]
+      },
+      {
+        "year": "2017",
+        "events": [
+          {
+            "month": "12",
+            "text": "Received the Presidential Award on the '10th Product Safety Day' led by the Ministry of Trade, Industry and Energy"
+          },
+          {
+            "month": "09",
+            "text": "Certified as a Venture Company"
+          },
+          {
+            "month": "09",
+            "text": "Certified as a Research Institute"
+          },
+          {
+            "month": "06",
+            "text": "Released SFEX Tape"
+          },
+          {
+            "month": "05",
+            "text": "Released SFEX Inside"
+          },
+          {
+            "month": "04",
+            "text": "Released SFEX Pad"
+          },
+          {
+            "month": "03",
+            "text": "Established SFEX TECH Co., Ltd."
+          }
+        ]
+      },
+      {
+        "year": "2016",
+        "events": [
+          {
+            "month": "09",
+            "text": "Patent: Fire extinguishing equipment with wireless communication function (No. 10-1658710)"
+          }
+        ]
+      }
+    ]
+  },
+  "ProductDetails": {
+    "sfex-ap-tape": {
+      "name": "SFEX AP Tape",
+      "subtitle": "Arc Proof Tape - Prevention of Fire Spreading",
+      "overview": [
+        "SFEX AP Tape is Arc Proof Tape. The micro fire extinguishing capsule reacts immediately to a specific temperature and flame and automatically sprays extinguishing agent to extinguish the initial fire.",
+        "To prevent the spread of fire, attach it to the wire connection terminals, the incoming/outgoing wires of the electric panel, and the vertical zone of the cable."
+      ],
+      "features": [
+        "It is a simple tape type wrapped around cables and connection terminals and has excellent performance in initial fire suppression.",
+        "It is Stand-alone method based on a polymer chemical, which has no malfunctions and no maintenance costs.",
+        "It does not affect the surrounding equipment during or after operation.",
+        "Fire Extinguishing Method : Cooling + Chemical Inhibition",
+        "Special Features : Fire Extinguishing + Flame-retardant + Electrical Insulation"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX AP Tape 50",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "50mm X 1000mm X 1t"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "150±5 ℃"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Local Application System"
+            },
+            {
+              "label": "Features",
+              "value": "Fire Extinguishing + Flame-retardant + Electrical Insulation"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Cooling + Chemical Inhibition"
+            }
+          ]
+        },
+        {
+          "title": "SFEX AP Tape 100",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "100mm X 1000mm X 1t"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "150±5 ℃"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Local Application System"
+            },
+            {
+              "label": "Features",
+              "value": "Fire Extinguishing + Flame-retardant + Electrical Insulation"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Cooling + Chemical Inhibition"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-ct-manteau": {
+      "name": "SFEX CT Manteau",
+      "subtitle": "Cable Tray Fire Extinguishing Solution",
+      "overview": [
+        "SFEX CT Manteau is a cover type combustion proof product that is installed for the purpose of extinguishing and preventing the spread of fires in power and communication lines in cable trays.",
+        "It is a dual functioned product with fire extinguishing technology as well as blocking fire function that extinguishes fire immediately when a fire occurs in the cable and prevents the spread of fire to the cable from the outside."
+      ],
+      "features": [
+        "It is composed of multilayer structure including fire extinguishing sheet, fire blocking sheet, and eco-friendly flame-retardant adhesive layer, ensuring effective adaptation to cable fires.",
+        "It is not a device-based product, but a material-based one, so it can be installed close to the ignition point, making it advantageous for initial fire extinguishing.",
+        "It is a flexible cover type product that can be easily installed and dismantle and no maintenance costs.",
+        "It maintains a high level of operational reliability as a product with excellent quality and numerous best practices in customer sites."
+      ],
+      "specifications": [
+        {
+          "title": "SFEX CT Manteau 1000",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "1000mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Local Application System"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Cooling and Suffocation"
+            }
+          ]
+        },
+        {
+          "title": "SFEX CT Manteau 700",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "700mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Local Application System"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Cooling and Suffocation"
+            }
+          ]
+        },
+        {
+          "title": "SFEX CT Manteau 500",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "500mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Local Application System"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Cooling and Suffocation"
+            }
+          ]
+        },
+        {
+          "title": "SFEX CT Manteau 300",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "300mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Local Application System"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Cooling and Suffocation"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-detector": {
+      "name": "SFEX Detector",
+      "subtitle": "Temperature-sensitive Sticker",
+      "overview": [
+        "The SFEX Detector is capable of detecting cable overheating temperatures, thereby preventing fire risks in advance. It utilizes Thermochromic Microcapsules that change color when they reach a specific(40°C, 50°C and 60°C) temperature. This enables you to easily monitor temperature changes inside the electric panel with the naked eyes."
+      ],
+      "features": [],
+      "specifications": [
+        {
+          "title": "SFEX Detector",
+          "items": [
+            {
+              "label": "Type",
+              "value": "Temperature-sensitive Sticker"
+            },
+            {
+              "label": "Size",
+              "value": "30mm X 50mm"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Recommended Replacement Period",
+              "value": "3 years"
+            }
+          ]
+        }
+      ],
+      "statusTable": {
+        "title": "Example",
+        "safe": "SAFE",
+        "attention": "ATTENTION",
+        "warning": "WARNING",
+        "danger": "DANGER",
+        "restoration": "RESTORATION"
+      }
+    },
+    "sfex-fr-board": {
+      "name": "SFEX FR Board",
+      "subtitle": "Non-combustible Reinforced Plastic",
+      "overview": [
+        "SFEX FR Board is the world's first non-combustible reinforced plastic.",
+        "It retains the advantages of existing fiber-reinforced plastics while achieving non-combustible performance.",
+        "Additionally, this product has successfully passed the non-flammability test and gas hazard test in accordance with the Ministry of Land, Infrastructure, and Transport Notice No. 2022-84."
+      ],
+      "features": [
+        "Non-combustible Reinforced Plastic",
+        "Eco-friendly Inorganic Flame Retardant Included",
+        "Corrosion Resistance, Heat Resistance and Flame Resistance",
+        "Lightweight with High Tensile Strength"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX FR Board",
+          "items": [
+            {
+              "label": "Type",
+              "value": "Board (non-combustible reinforced plastic)"
+            },
+            {
+              "label": "Category",
+              "value": "Refractory Materials"
+            },
+            {
+              "label": "Application",
+              "value": "Fire barriers, panel enclosures"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-hi100": {
+      "name": "SFEX Hi 100",
+      "subtitle": "Non-combustible Reinforced Plastic",
+      "overview": [
+        "Hi-100 is an automatic fire extinguisher designed to be installed inside a plastic electric box.",
+        "The subtly protruded surface enhances fire extinguishing ability by increasing the surface area in contact with fire.",
+        "The product optimized for enclosed environments with an IP rating of 20 or higher."
+      ],
+      "features": [
+        "Its sticker type makes installation convenient and no need for maintenance.",
+        "The stand-alone polymer chemical-based system has no malfunction and requires no maintenance costs.",
+        "Cut the product to fit the application area and securely adhere it to the entire top area of the box."
+      ],
+      "caution": [
+        "Application is limited to volumes of 20L or less (e.g., 300mm*400mm*170mm).",
+        "The distance between Hi-100 and the ignition point should be within 20cm.",
+        "Ensure there are no obstacles between Hi-100 and the ignition points.",
+        "If the distance between ignition points is substantial and the structure is complex, it is recommended to use SFEX Line."
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Hi-100",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "240mm X 100mm X 3T"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "150±5°C"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "Room Temperature"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Local Application System"
+            },
+            {
+              "label": "Fire Extinguishing Agent",
+              "value": "FK 5-1-12"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Cooling and Chemical Reaction"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-inside": {
+      "name": "SFEX Inside",
+      "subtitle": "The World's First Automatic Fire Extinguishing Multi-outlet",
+      "overview": [
+        "SFEX Inside is a multi-outlet equipped with a fire extinguishing unit that applies SFEX Powder to the ignition point.",
+        "Patent No : 10-1887396",
+        "Presidential Award-winning product : 10th Product Safety Day organized by the Ministry of Trade, Industry and Energy in 2017",
+        "Selected as an excellent invention product for priority purchase by the Korea Invention Promotion Association in October 2018",
+        "Selected as a disaster safety product in December 2018",
+        "Selected as an excellent commercial product for military use by the Ministry of National Defense in December 2019",
+        "Selected as a 'Brand K' (Korean National Company Joint Brand) by the Small and Medium Business Administration in June 2022"
+      ],
+      "features": [
+        "SFEX Inside is an innovative multi-outlet that automatically detects and extinguishes heat and fire in the event of fire caused by arcs, overload, tracking, etc.",
+        "It has excellent initial fire suppression capability with a cooling fire extinguishing method inside the multi-outlet."
+      ],
+      "productsTitle": "Products",
+      "items": [
+        {
+          "title": "SFEX Inside 4-Port Main Switch",
+          "model": "DYM-G4C(SC)-SI"
+        },
+        {
+          "title": "SFEX Inside 6-Port Main Switch",
+          "model": "DYM-G6C(SC)-SI"
+        },
+        {
+          "title": "SFEX Inside 2-Port Leakage/Overload Protection",
+          "model": "SHM-NJCDG-16A2-SI"
+        },
+        {
+          "title": "SFEX Inside 4-Port Individual Switch",
+          "model": "DYM-NSG4C/SC-SI"
+        },
+        {
+          "title": "SFEX Inside 6-Port Individual Switch",
+          "model": "DYM-NSG6C/SC-SI"
+        },
+        {
+          "title": "SFEX Inside 4-Port Individual Smart Cap",
+          "model": "KKM-456-SI-SM-3M"
+        },
+        {
+          "title": "SFEX Inside 6-Port Individual Smart Cap",
+          "model": "KKM-656-SI-SM-3M"
+        },
+        {
+          "title": "SFEX Inside 2-Port Recessed Smart Cap",
+          "model": "KKC-241-SI"
+        },
+        {
+          "title": "SFEX Inside 2-Port Surface Mount",
+          "model": "924872-SI"
+        },
+        {
+          "title": "SFEX Inside 2-Port Recessed Type",
+          "model": "KKC-221-SI"
+        },
+        {
+          "title": "SFEX Inside 2-Port Leakage Protection (Weatherproof)",
+          "model": "924892-SI"
+        },
+        {
+          "title": "SFEX Inside Aluminum Power Strip",
+          "model": "* Customization available upon request"
+        }
+      ]
+    },
+    "sfex-line": {
+      "name": "SFEX Line",
+      "subtitle": "Stand-alone Fire Extinguisher for Medium and Large Electric Panels",
+      "overview": [
+        "SFEX Line is a fire extinguisher that can be installed in medium and large electrical panel or attached to the equipment to suppress fires at an early stage.",
+        "It is a flexible rope-type extinguisher that can be installed even in narrow spaces where ignition is anticipated."
+      ],
+      "features": [
+        "The flexible rope type can be installed near the ignition point, providing excellent performance to suppress fires at an early stage.",
+        "It is a stand-alone polymer chemical-based device with no malfunction and no maintenance cost.",
+        "The fire extinguishing agent is a solid aerosol compound based on nitrate.",
+        "The SFEX Granule all-in-one function = A fire extinguisher storage tank + temperature sensor + nozzle"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Line 400",
+          "items": [
+            {
+              "label": "Diameter",
+              "value": "4mm"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "350±10 °C"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "150°C"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Total Flooding System"
+            },
+            {
+              "label": "Fire Extinguishing Agent",
+              "value": "Solid Aerosol Compound based on K2CO3"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Chemical Inhibition + Cooling + Dilution"
+            }
+          ]
+        },
+        {
+          "title": "SFEX Line 700",
+          "items": [
+            {
+              "label": "Diameter",
+              "value": "7mm"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "350±10 °C"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "150°C"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Total Flooding System"
+            },
+            {
+              "label": "Fire Extinguishing Agent",
+              "value": "Solid Aerosol Compound based on K2CO3"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Chemical Inhibition + Cooling + Dilution"
+            }
+          ]
+        },
+        {
+          "title": "SFEX Line 1000",
+          "items": [
+            {
+              "label": "Diameter",
+              "value": "10mm"
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "350±10 °C"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "150°C"
+            },
+            {
+              "label": "Operating Method",
+              "value": "Total Flooding System"
+            },
+            {
+              "label": "Fire Extinguishing Agent",
+              "value": "Solid Aerosol Compound based on K2CO3"
+            },
+            {
+              "label": "Fire Extinguishing Method",
+              "value": "Chemical Inhibition + Cooling + Dilution"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-pad": {
+      "name": "SFEX Pad",
+      "subtitle": "The World's Smallest Micro-fire Extinguisher",
+      "overview": [
+        "The micro capsules react to specific temperatures and flames to suppress fires in the early stages.",
+        "SFEX Pad is a fire suppression pad designed specifically for use in small electrical enclosures. It has an excellent cooling extinguishing method, allowing it to completely suppress fires with an immediate reaction during the initial ignition phase"
+      ],
+      "features": [
+        "It has excellent performance in suppressing initial fires as it is installed on the inside top of small electric panels in a simple pad type.",
+        "The stand-alone polymer chemical-based system has no malfunction and requires no maintenance costs.",
+        "SFEX Powder : A temperature-sensitive powder consisting of an eco-friendly extinguishing agent, Perfluoro [2-methyl-3-pentanone], and subsidiary catalyst.",
+        "It does not affect the surrounding equipment after extinguishing.",
+        "Extinguishing method : Cooling + Chemical Reaction."
+      ],
+      "caution": [
+        "The fire extinguishing agent in the pad, FK-5-1-12, has a gas density 11.4 times heavier than that of air.",
+        "This characteristic causes the extinguishing agent to be sprayed in a vertical form, which may not reach the fire at the bottom if there are obstacles between the fire and the pad.",
+        "As a result, top-mounted fire extinguishers may not perform well in panels with complex structures."
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Pad 60",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "250mm X 100mm X 2"
+            },
+            {
+              "label": "Applied Panel Criteria",
+              "value": "60 liters / Height of the electric panel: 60cm is recommended, but the maximum is 80cm."
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "150±5°C"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "-40/+60°C"
+            }
+          ]
+        },
+        {
+          "title": "SFEX Pad 80",
+          "items": [
+            {
+              "label": "Product Dimensions",
+              "value": "270mm X 120mm X 2"
+            },
+            {
+              "label": "Applied Panel Criteria",
+              "value": "80 liters / Height of the electric panel: 80cm is recommended, but the maximum is 100cm."
+            },
+            {
+              "label": "Operating Temperature",
+              "value": "150±5°C"
+            },
+            {
+              "label": "Storage Temperature",
+              "value": "-40/+60°C"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-thermal": {
+      "name": "SFEX Thermal Barrier",
+      "subtitle": "Thermal Runaway Propagation Barrier",
+      "overview": [
+        "SFEX Thermal Barrier is a product designed to prevent battery thermal runaway fire propagation by utilizing non-combustible/heat-shielding performance. It effectively blocks the transfer of flames and high temperatures to the fire compartment during a fire event."
+      ],
+      "features": [
+        "The product is developed by enhancing the fire resistance and heat shielding performance as well as the tensile strength through multi-layer processing, based on FR Board (non-combustible reinforced plastic).",
+        "Battery Rack (ESS Unit), Cable Protection Product"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Thermal Barrier",
+          "items": [
+            {
+              "label": "Type",
+              "value": "Thermal barrier / bulkhead"
+            },
+            {
+              "label": "Category",
+              "value": "Refractory Materials"
+            },
+            {
+              "label": "Application",
+              "value": "Battery racks, ESS installations"
+            },
+            {
+              "label": "Function",
+              "value": "Thermal runaway propagation prevention"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

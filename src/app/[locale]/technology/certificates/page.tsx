@@ -5,12 +5,12 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 const productTabs = [
-  "SFEX Line",
-  "SFEX Pad",
-  "SFEX AP Tape",
-  "SFEX CT Manteau",
-  "SFEX Inside",
-  "Thermal Barrier",
+  { id: "01", name: "SFEX Line", imageCount: 9, ext: "jpg" },
+  { id: "02", name: "SFEX Pad", imageCount: 1, ext: "png" },
+  { id: "03", name: "SFEX AP Tape", imageCount: 4, ext: "jpg" },
+  { id: "04", name: "SFEX CT Manteau", imageCount: 1, ext: "png" },
+  { id: "05", name: "SFEX Inside", imageCount: 4, ext: "jpg" },
+  { id: "06", name: "Thermal Barrier", imageCount: 4, ext: "jpg" },
 ];
 
 export default function CertificatesPage() {
@@ -26,8 +26,7 @@ export default function CertificatesPage() {
 
   return (
     <SubPageLayout
-      title={t("techIntroTitle")}
-      heroImage="/hero2.jpg"
+      title={t("techCertTitle")}
       sideNav={sideNav}
     >
       {/* Product Tabs */}
@@ -35,25 +34,36 @@ export default function CertificatesPage() {
         <div className="flex">
           {productTabs.map((tab, i) => (
             <button
-              key={tab}
+              key={tab.id}
               onClick={() => setActiveTab(i)}
-              className={`flex-1 px-2 py-1 text-[16px] font-poppins font-medium transition-all duration-200
-                ${
-                  activeTab === i
-                    ? "bg-white text-[#222] border-2 border-sfex-red"
-                    : "text-[#555] hover:text-[#222] bg-white border border-gray-300"
+              className={`flex-1 cursor-pointer px-0.5 py-1 text-[16px] font-poppins font-medium transition-all duration-200
+                ${activeTab === i
+                  ? "bg-white text-[#222] border border-sfex-red"
+                  : "text-[#555] hover:text-[#222] bg-white border border-gray-200"
                 }`}
             >
-              {tab}
+              {tab.name}
             </button>
           ))}
         </div>
       </div>
 
-      {/* Certificate content placeholder */}
-      <div className="bg-gray-50 p-8 text-center text-[#999]">
-        <p className="text-lg">{productTabs[activeTab]}</p>
-        <p className="mt-2 text-sm">Certificate and test report documents</p>
+      {/* Certificate Images Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {Array.from({ length: productTabs[activeTab].imageCount }, (_, i) => {
+          const tabNum = activeTab + 1;
+          const imgNum = i + 1;
+          const ext = productTabs[activeTab].ext;
+          return (
+            <div key={i} className="bg-white border border-gray-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <img
+                src={`/productTabs/${tabNum}/tab${tabNum}_p${imgNum}.${ext}`}
+                alt={`${productTabs[activeTab].name} Certificate ${imgNum}`}
+                className="w-full h-full object-contain"
+              />
+            </div>
+          );
+        })}
       </div>
     </SubPageLayout>
   );

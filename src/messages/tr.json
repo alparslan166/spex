@@ -13,7 +13,10 @@
     "appCable": "Kablo Yangını",
     "appOutlet": "Priz Yangını",
     "appBattery": "Batarya Termal Kaçağı",
-    "product": "Ürün Tanıtımı"
+    "product": "Ürün Tanıtımı",
+    "productCat1": "Elektrik Yangınlarının İlk Söndürülmesi",
+    "productCat2": "Refrakter Malzeme Geliştirme",
+    "selectCategory": "Ürünleri görüntülemek için bir kategori seçin"
   },
   "Hero": {
     "title1": "Elektrik Yangınının Tutuşma Noktasını Fethet",
@@ -33,6 +36,7 @@
   },
   "Products": {
     "title": "Ürün Tanıtımı",
+    "subtitle": "SFEXTECH teknolojisini doğrulayabilen ürünlerle tanışın.",
     "p1": "SFEX Line",
     "p1_desc": "Orta ve büyük elektrik panellerindeki yangınlar için otomatik söndürme çözümü",
     "p2": "SFEX Pad",
@@ -82,6 +86,15 @@
     "whySfex7": "Ek ekipman gerektirmeyen bağımsız yöntem",
     "majorCustomerTitle": "Büyük Müşteriler",
     "certPageTitle": "Sertifika ve Test Raporu",
+    "cableHorizontal": "1. Yatay Bölge : SFEX CT Manteau",
+    "cableVertical": "2. Dikey Bölge : SFEX AP Tape",
+    "cableSolutionTitle": "SFEX Çözümü: SFEX CT Manteau / SFEX AP Tape",
+    "outletSolutionTitle": "SFEX Çözümü : SFEX Hi-100/ SFEX Inside",
+    "outletStickerTitle": "1. SFEX Hi-100 : Etiket Tipi Yangın Söndürücü",
+    "outletInsideTitle": "2. SFEX Inside : Yangın söndürme maddesini çoklu prizin içine uygulayın.",
+    "batterySolutionTitle": "SFEX Çözümü : SFEX Thermal Barrier",
+    "batteryBulkhead": "1. Batarya Rafları Arasında Yangına Dayanıklı Bölme",
+    "batteryStorage": "2. Batarya Depolama Rafı",
     "panelFireTitle": "Elektrik Paneli Yangını",
     "panelFireHeading": "Elektrik Paneli İçindeki Yangın",
     "cableFireTitle": "Kablo Yangını",
@@ -93,6 +106,742 @@
     "overview": "Genel Bakış",
     "features": "Özellikler",
     "specification": "Teknik Özellikler",
-    "caution": "Dikkat"
+    "caution": "Dikkat",
+    "howItWorks": "Nasıl Çalışır",
+    "howItWorks1": "Giriş/çıkış kablolarını SFEX AP Bant ile 1.5 ila 2 kez sarın.",
+    "howItWorks2": "Yangın durumunda söndürme ve yangın geciktirme özelliği ile yayılmayı önler.",
+    "howItWorks3": "Yangının Kablo Çukuruna veya elektrik panosunun dışındaki diğer alanlara yayılmasını önler.",
+    "solutionPadTitle": "SFEX Çözümü: SFEX Line / SFEX Pad",
+    "solutionPadDesc1": "Elektrik panosunun içindeki klemens bloklarının çoğu yangın tutuşma noktaları olduğundan, çözüm bu alana yakın kurulmalıdır.",
+    "solutionPadDesc2": "SFEX Pad, mükemmel ilk yangın söndürme için panonun üstüne yapıştırılacak şekilde tasarlanmıştır.",
+    "solutionTapeTitle": "SFEX Çözümü: SFEX AP Tape",
+    "solutionTapeDesc1": "Elektrik panosundaki klemensin zayıf bağlantısı ısınmaya ve yangına neden olur. Yangın başlangıçta söndürülse bile, yeniden tutuşma riski yüksektir.",
+    "solutionTapeDesc2": "Elektrik panosunun kapısı açıksa, yangın söndürme yeteneği zayıflayabilir ve yangın sönmeyebilir.",
+    "solutionTapeDesc3": "Bu nedenle, yangının elektrik panosunun giriş/çıkış kablolarından veya elektrik panosunun dışındaki kablolardan içeriye yayılmasını önlemek için yedek bir çözüm şarttır.",
+    "ex1Title": "SFEX Line – Kanallı Alanlar İçin :",
+    "ex1Desc1": "SFEX Line'ı kanala, beklenen tutuşma noktasına en yakın yere yatay veya dikey olarak kurun.",
+    "ex1Desc2": "Kurulum için brakete gerek yoktur, elektrik panosuna zarar vermez.",
+    "ex2Title": "SFEX Line – Kanalsız Alanlar İçin :",
+    "ex2Desc1": "SFEX Line'ı kabloya, beklenen tutuşma noktasına en yakın yere yatay veya dikey olarak kurun.",
+    "ex3Title": "SFEX Pad – Küçük Paneller İçin :",
+    "ex3Desc1": "SFEX Pad'i elektrik panosunun içine üst tarafa yapıştırmanız yeterlidir.",
+    "exampleLabel": "Örnek",
+    "moreLogos": "daha fazla",
+    "historyContent": [
+      {
+        "year": "2023",
+        "events": [
+          {
+            "month": "07",
+            "text": "İkinci Fabrika Kuruldu"
+          }
+        ]
+      },
+      {
+        "year": "2022",
+        "events": [
+          {
+            "month": "07",
+            "text": "KOBİ ve Girişim Bakanlığı Tarafından Ulusal Co-Brand BRAND K Olarak Seçildi."
+          },
+          {
+            "month": "04",
+            "text": "ISO 9001 ve ISO 14001 Sertifikaları Alındı"
+          }
+        ]
+      },
+      {
+        "year": "2021",
+        "events": [
+          {
+            "month": "12",
+            "text": "Büyüme İçin İlk Fabrika Başka Bir Yere Taşındı"
+          },
+          {
+            "month": "08",
+            "text": "Bir Halma Şirketi Olan Firetrace International ile İş Birliği ve Özel Distribütörlük Anlaşması İmzalandı"
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "events": [
+          {
+            "month": "01",
+            "text": "Savunma Ajansı Teknoloji ve Kalite Tarafından Tech Fi Net'e Kaydedildi"
+          }
+        ]
+      },
+      {
+        "year": "2019",
+        "events": [
+          {
+            "month": "12",
+            "text": "Milli Savunma Bakanlığı Tarafından Askeri Kullanım İçin Seçildi"
+          },
+          {
+            "month": "09",
+            "text": "SFEX AP(Ark Koruyucu) Bant Piyasaya Sürüldü"
+          },
+          {
+            "month": "06",
+            "text": "SFEX TECH Co., Ltd'nin ilk tesisi kuruldu"
+          },
+          {
+            "month": "05",
+            "text": "SFEX CT(Kablo Kanalı) Manteau Piyasaya Sürüldü"
+          }
+        ]
+      },
+      {
+        "year": "2018",
+        "events": [
+          {
+            "month": "11",
+            "text": "SFEX Line Piyasaya Sürüldü"
+          },
+          {
+            "month": "10",
+            "text": "Kore Buluş Tanıtma Derneği Tarafından Tercihen Satın Alınacak Bir Ürün ve Mükemmel Bir Buluş Olarak Seçildi"
+          },
+          {
+            "month": "08",
+            "text": "Patent: Yangın korumalı priz (No. 10-1887396)"
+          },
+          {
+            "month": "06",
+            "text": "Kore İş Sağlığı ve Güvenliği Ajansı Tarafından Düzenlenen '2018 Yeni Güvenlik Teknolojileri Sergisi'nde Büyük Ödül Kazandı"
+          }
+        ]
+      },
+      {
+        "year": "2017",
+        "events": [
+          {
+            "month": "12",
+            "text": "Ticaret, Sanayi ve Enerji Bakanlığı Öncülüğünde Düzenlenen '10. Ürün Güvenliği Günü'nde Cumhurbaşkanlığı Ödülü Alındı"
+          },
+          {
+            "month": "09",
+            "text": "Girişim Şirketi Olarak Sertifikalandı"
+          },
+          {
+            "month": "09",
+            "text": "Araştırma Enstitüsü Olarak Sertifikalandı"
+          },
+          {
+            "month": "06",
+            "text": "SFEX Bant Piyasaya Sürüldü"
+          },
+          {
+            "month": "05",
+            "text": "SFEX Inside Piyasaya Sürüldü"
+          },
+          {
+            "month": "04",
+            "text": "SFEX Pad Piyasaya Sürüldü"
+          },
+          {
+            "month": "03",
+            "text": "SFEX TECH Co., Ltd. Kuruldu"
+          }
+        ]
+      },
+      {
+        "year": "2016",
+        "events": [
+          {
+            "month": "09",
+            "text": "Patent: Kablosuz iletişim fonksiyonlu yangın söndürme ekipmanı (No. 10-1658710)"
+          }
+        ]
+      }
+    ]
+  },
+  "ProductDetails": {
+    "sfex-ap-tape": {
+      "name": "SFEX AP Tape",
+      "subtitle": "Ark Koruyucu Bant - Yangın Yayılımının Önlenmesi",
+      "overview": [
+        "SFEX AP Bant, Ark Koruyucu Banttır. Mikro yangın söndürme kapsülü belirli bir sıcaklığa ve aleve anında tepki verir ve ilk yangını söndürmek için otomatik olarak söndürme maddesi püskürtür.",
+        "Yangının yayılmasını önlemek için kablo bağlantı terminallerine, elektrik panelinin giriş/çıkış kablolarına ve kablonun dikey bölgesine takın."
+      ],
+      "features": [
+        "Kabloların ve bağlantı terminallerinin etrafına sarılan basit bir bant tipidir ve ilk yangın söndürmede mükemmel performans sergiler.",
+        "Arıza yapmayan ve bakım maliyeti gerektirmeyen polimer kimyasal tabanlı bağımsız bir yöntemdir.",
+        "Çalışma sırasında veya sonrasında çevre ekipmanı etkilemez.",
+        "Yangın Söndürme Yöntemi : Soğutma + Kimyasal Engelleme",
+        "Özel Özellikler : Yangın Söndürme + Alev Geciktirici + Elektriksel Yalıtım"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX AP Tape 50",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "50mm X 1000mm X 1t"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "150±5 ℃"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Yerel Uygulama Sistemi"
+            },
+            {
+              "label": "Özellikler",
+              "value": "Yangın Söndürme + Alev Geciktirici + Elektriksel Yalıtım"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Soğutma + Kimyasal Engelleme"
+            }
+          ]
+        },
+        {
+          "title": "SFEX AP Tape 100",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "100mm X 1000mm X 1t"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "150±5 ℃"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Yerel Uygulama Sistemi"
+            },
+            {
+              "label": "Özellikler",
+              "value": "Yangın Söndürme + Alev Geciktirici + Elektriksel Yalıtım"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Soğutma + Kimyasal Engelleme"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-ct-manteau": {
+      "name": "SFEX CT Manteau",
+      "subtitle": "Kablo Kanalı Yangın Söndürme Çözümü",
+      "overview": [
+        "SFEX CT Manteau, kablo kanallarındaki güç ve iletişim hatlarında yangınları söndürmek ve yayılmasını önlemek amacıyla kurulan kapak tipi yanmaya dayanıklı bir üründür.",
+        "Yangın söndürme teknolojisinin yanı sıra kabloda yangın çıktığında yangını anında söndüren ve dışarıdan kabloya yangın sıçramasını önleyen yangın engelleme işlevine sahip çift fonksiyonlu bir üründür."
+      ],
+      "features": [
+        "Kablo yangınlarına etkili uyum sağlayan yangın söndürme levhası, yangın engelleme levhası ve çevre dostu alev geciktirici yapışkan tabaka dahil olmak üzere çok katmanlı yapıdan oluşur.",
+        "Cihaz tabanlı bir ürün değil, malzeme tabanlı bir üründür, bu nedenle tutuşma noktasına yakın kurulabilir, bu da ilk yangın söndürme için avantaj sağlar.",
+        "Kolayca kurulup sökülebilen ve bakım maliyeti olmayan esnek bir kapak tipi üründür.",
+        "Mükemmel kalitede bir ürün olarak ve müşteri sahalarındaki sayısız en iyi uygulama ile yüksek düzeyde operasyonel güvenilirliği korur."
+      ],
+      "specifications": [
+        {
+          "title": "SFEX CT Manteau 1000",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "1000mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Yerel Uygulama Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Soğutma ve Boğma"
+            }
+          ]
+        },
+        {
+          "title": "SFEX CT Manteau 700",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "700mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Yerel Uygulama Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Soğutma ve Boğma"
+            }
+          ]
+        },
+        {
+          "title": "SFEX CT Manteau 500",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "500mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Yerel Uygulama Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Soğutma ve Boğma"
+            }
+          ]
+        },
+        {
+          "title": "SFEX CT Manteau 300",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "300mm X 1000mm X 2.1t"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "200±10 ℃"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Yerel Uygulama Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Soğutma ve Boğma"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-detector": {
+      "name": "SFEX Detector",
+      "subtitle": "Sıcaklığa Duyarlı Etiket",
+      "overview": [
+        "SFEX Detektör, kablo aşırı ısınma sıcaklıklarını tespit ederek yangın risklerini önceden önleyebilir. Belirli bir (40°C, 50°C ve 60°C) sıcaklığa ulaştıklarında renk değiştiren Termokromik Mikrokapsülleri kullanır. Bu, elektrik panelinin içindeki sıcaklık değişimlerini çıplak gözle kolayca izlemenizi sağlar."
+      ],
+      "features": [],
+      "specifications": [
+        {
+          "title": "SFEX Detector",
+          "items": [
+            {
+              "label": "Tip",
+              "value": "Sıcaklığa Duyarlı Etiket"
+            },
+            {
+              "label": "Boyut",
+              "value": "30mm X 50mm"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Önerilen Değiştirme Periyodu",
+              "value": "3 yıl"
+            }
+          ]
+        }
+      ],
+      "statusTable": {
+        "title": "Örnek",
+        "safe": "GÜVENLİ",
+        "attention": "DİKKAT",
+        "warning": "UYARI",
+        "danger": "TEHLİKE",
+        "restoration": "Geri Dönüş"
+      }
+    },
+    "sfex-fr-board": {
+      "name": "SFEX FR Board",
+      "subtitle": "Yanmaz Takviyeli Plastik",
+      "overview": [
+        "SFEX FR Board, dünyanın ilk yanmaz takviyeli plastiğidir.",
+        "Mevcut elyaf takviyeli plastiklerin avantajlarını korurken yanmazlık performansı sağlar.",
+        "Ayrıca bu ürün, Arazi, Altyapı ve Ulaştırma Bakanlığı'nın 2022-84 Sayılı Tebliği uyarınca yanmazlık testi ve gaz tehlikesi testini başarıyla geçmiştir."
+      ],
+      "features": [
+        "Yanmaz Takviyeli Plastik",
+        "Çevre Dostu İnorganik Alev Geciktirici İçerir",
+        "Korozyon Direnci, Isı Direnci ve Alev Direnci",
+        "Yüksek Çekme Mukavemetine Sahip Hafif Yapı"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX FR Board",
+          "items": [
+            {
+              "label": "Tip",
+              "value": "Levha (yanmaz takviyeli plastik)"
+            },
+            {
+              "label": "Kategori",
+              "value": "Refrakter Malzemeler"
+            },
+            {
+              "label": "Uygulama",
+              "value": "Yangın bariyerleri, pano muhafazaları"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-hi100": {
+      "name": "SFEX Hi 100",
+      "subtitle": "Yanmaz Takviyeli Plastik",
+      "overview": [
+        "Hi-100, plastik bir elektrik kutusunun içine kurulmak üzere tasarlanmış otomatik bir yangın söndürücüdür.",
+        "Hafif çıkıntılı yüzey, yangınla temas eden yüzey alanını artırarak yangın söndürme yeteneğini geliştirir.",
+        "IP 20 veya daha yüksek koruma sınıfına sahip kapalı ortamlar için optimize edilmiş ürün."
+      ],
+      "features": [
+        "Etiket tipi olması kurulumu kolaylaştırır ve bakım gerektirmez.",
+        "Arıza yapmayan ve bakım maliyeti gerektirmeyen polimer kimyasal tabanlı bağımsız bir sistemdir.",
+        "Ürünü uygulama alanına uyacak şekilde kesin ve kutunun tüm üst alanına güvenli bir şekilde yapıştırın."
+      ],
+      "caution": [
+        "Uygulama 20L veya daha az hacimlerle sınırlıdır (örneğin, 300mm*400mm*170mm).",
+        "Hi-100 ile tutuşma noktası arasındaki mesafe 20 cm dahilinde olmalıdır.",
+        "Hi-100 ile tutuşma noktaları arasında engel bulunmadığından emin olun.",
+        "Tutuşma noktaları arasındaki mesafe büyükse ve yapı karmaşıksa, SFEX Line kullanılması önerilir."
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Hi-100",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "240mm X 100mm X 3T"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "150±5°C"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "Oda Sıcaklığı"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Yerel Uygulama Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Maddesi",
+              "value": "FK 5-1-12"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Soğutma ve Kimyasal Reaksiyon"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-inside": {
+      "name": "SFEX Inside",
+      "subtitle": "Dünyanın İlk Otomatik Yangın Söndürmeli Çoklu Prizi",
+      "overview": [
+        "SFEX Inside, ateşleme noktasına SFEX Tozu uygulayan bir yangın söndürme ünitesi ile donatılmış bir çoklu prizdir.",
+        "Patent No : 10-1887396",
+        "Cumhurbaşkanlığı Ödüllü ürün : 2017 yılında Ticaret, Sanayi ve Enerji Bakanlığı tarafından düzenlenen 10. Ürün Güvenliği Günü",
+        "Ekim 2018'de Kore Buluş Tanıtma Derneği tarafından öncelikli satın alma için mükemmel bir buluş ürünü olarak seçildi",
+        "Aralık 2018'de afet güvenliği ürünü olarak seçildi",
+        "Aralık 2019'da Milli Savunma Bakanlığı tarafından askeri kullanım için mükemmel bir ticari ürün olarak seçildi",
+        "Haziran 2022'de Küçük ve Orta Ölçekli İşletmeler İdaresi tarafından 'Brand K' (Kore Ulusal Şirketi Ortak Markası) olarak seçildi"
+      ],
+      "features": [
+        "SFEX Inside, arklar, aşırı yükleme, izleme vb. nedenlerden kaynaklanan yangın durumunda ısıyı ve yangını otomatik olarak algılayan ve söndüren yenilikçi bir çoklu prizdir.",
+        "Çoklu prizin içindeki soğutma yangın söndürme yöntemiyle mükemmel ilk yangın söndürme kabiliyetine sahiptir."
+      ],
+      "productsTitle": "Ürünler",
+      "items": [
+        {
+          "title": "SFEX Inside 4'lü Ana Şalter",
+          "model": "DYM-G4C(SC)-SI"
+        },
+        {
+          "title": "SFEX Inside 6'lı Ana Şalter",
+          "model": "DYM-G6C(SC)-SI"
+        },
+        {
+          "title": "SFEX Inside 2'li Kaçak/Aşırı Yük Koruması",
+          "model": "SHM-NJCDG-16A2-SI"
+        },
+        {
+          "title": "SFEX Inside 4'lü Bireysel Şalter",
+          "model": "DYM-NSG4C/SC-SI"
+        },
+        {
+          "title": "SFEX Inside 6'lı Bireysel Şalter",
+          "model": "DYM-NSG6C/SC-SI"
+        },
+        {
+          "title": "SFEX Inside 4'lü Bireysel Akıllı Kapak",
+          "model": "KKM-456-SI-SM-3M"
+        },
+        {
+          "title": "SFEX Inside 6'lı Bireysel Akıllı Kapak",
+          "model": "KKM-656-SI-SM-3M"
+        },
+        {
+          "title": "SFEX Inside 2'li Gömme Akıllı Kapak",
+          "model": "KKC-241-SI"
+        },
+        {
+          "title": "SFEX Inside 2'li Sıva Üstü",
+          "model": "924872-SI"
+        },
+        {
+          "title": "SFEX Inside 2'li Gömme Tip",
+          "model": "KKC-221-SI"
+        },
+        {
+          "title": "SFEX Inside 2'li Kaçak Korumalı (Su Geçirmez)",
+          "model": "924892-SI"
+        },
+        {
+          "title": "SFEX Inside Alüminyum Çoklu Priz",
+          "model": "* İsteğe göre özel üretim mevcuttur"
+        }
+      ]
+    },
+    "sfex-line": {
+      "name": "SFEX Line",
+      "subtitle": "Orta ve Büyük Elektrik Panelleri İçin Bağımsız Yangın Söndürücü",
+      "overview": [
+        "SFEX Line, orta ve büyük elektrik panellerine kurulabilen veya yangınları erken bir aşamada söndürmek için ekipmana takılabilen bir yangın söndürücüdür.",
+        "Tutuşmanın beklendiği dar alanlara bile kurulabilen esnek halat tipi bir söndürücüdür."
+      ],
+      "features": [
+        "Esnek halat tipi tutuşma noktasına yakın kurulabilir, yangınları erken aşamada söndürmek için mükemmel performans sağlar.",
+        "Arıza yapmayan ve bakım maliyeti olmayan polimer kimyasal tabanlı bağımsız bir cihazdır.",
+        "Yangın söndürme maddesi, nitrata dayalı katı bir aerosol bileşiğidir.",
+        "SFEX Granüle hepsi bir arada işlevi = Bir yangın söndürücü saklama tankı + sıcaklık sensörü + nozul"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Line 400",
+          "items": [
+            {
+              "label": "Çap",
+              "value": "4mm"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "350±10 °C"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "150°C"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Toplam Boğma Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Maddesi",
+              "value": "K2CO3 bazlı Katı Aerosol Bileşiği"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Kimyasal Engelleme + Soğutma + Seyreltme"
+            }
+          ]
+        },
+        {
+          "title": "SFEX Line 700",
+          "items": [
+            {
+              "label": "Çap",
+              "value": "7mm"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "350±10 °C"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "150°C"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Toplam Boğma Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Maddesi",
+              "value": "K2CO3 bazlı Katı Aerosol Bileşiği"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Kimyasal Engelleme + Soğutma + Seyreltme"
+            }
+          ]
+        },
+        {
+          "title": "SFEX Line 1000",
+          "items": [
+            {
+              "label": "Çap",
+              "value": "10mm"
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "350±10 °C"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "150°C"
+            },
+            {
+              "label": "Çalışma Yöntemi",
+              "value": "Toplam Boğma Sistemi"
+            },
+            {
+              "label": "Yangın Söndürme Maddesi",
+              "value": "K2CO3 bazlı Katı Aerosol Bileşiği"
+            },
+            {
+              "label": "Yangın Söndürme Yöntemi",
+              "value": "Kimyasal Engelleme + Soğutma + Seyreltme"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-pad": {
+      "name": "SFEX Pad",
+      "subtitle": "Dünyanın En Küçük Mikro Yangın Söndürücüsü",
+      "overview": [
+        "Mikro kapsüller, ilk aşamalarda yangınları söndürmek için belirli sıcaklıklara ve alevlere tepki verir.",
+        "SFEX Pad, özellikle küçük elektrik muhafazalarında kullanım için tasarlanmış bir yangın söndürme pedidir. Mükemmel bir soğutma söndürme yöntemine sahiptir ve ilk tutuşma aşamasında anında reaksiyonla yangınları tamamen söndürmesine olanak tanır"
+      ],
+      "features": [
+        "Küçük elektrik panolarının iç üst kısmına basit bir ped tipinde takıldığı için ilk yangınların söndürülmesinde mükemmel performansa sahiptir.",
+        "Polimer kimyasal tabanlı bağımsız sistemde arıza olmaz ve bakım maliyeti gerektirmez.",
+        "SFEX Powder : Çevre dostu bir söndürme maddesi olan Perfluoro [2-methyl-3-pentanone] ve yardımcı katalizörden oluşan sıcaklığa duyarlı bir toz.",
+        "Söndürme işleminden sonra çevre ekipmanı etkilemez.",
+        "Söndürme yöntemi : Soğutma + Kimyasal Reaksiyon."
+      ],
+      "caution": [
+        "Ped içindeki yangın söndürme maddesi FK-5-1-12, havadan 11,4 kat daha ağır bir gaz yoğunluğuna sahiptir.",
+        "Bu karakteristik, söndürme maddesinin dikey bir biçimde püskürtülmesine neden olur ve bu da yangın ile ped arasında engeller varsa alttaki yangına ulaşmayabilir.",
+        "Sonuç olarak, üste monte edilen yangın söndürücüler karmaşık yapılara sahip panellerde iyi performans göstermeyebilir."
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Pad 60",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "250mm X 100mm X 2"
+            },
+            {
+              "label": "Uygulanan Panel Kriterleri",
+              "value": "60 litre / Elektrik panosu yüksekliği: 60cm önerilir, ancak maksimum 80cm."
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "150±5°C"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "-40/+60°C"
+            }
+          ]
+        },
+        {
+          "title": "SFEX Pad 80",
+          "items": [
+            {
+              "label": "Ürün Boyutları",
+              "value": "270mm X 120mm X 2"
+            },
+            {
+              "label": "Uygulanan Panel Kriterleri",
+              "value": "80 litre / Elektrik panosu yüksekliği: 80cm önerilir, ancak maksimum 100cm."
+            },
+            {
+              "label": "Çalışma Sıcaklığı",
+              "value": "150±5°C"
+            },
+            {
+              "label": "Depolama Sıcaklığı",
+              "value": "-40/+60°C"
+            }
+          ]
+        }
+      ]
+    },
+    "sfex-thermal": {
+      "name": "SFEX Thermal Barrier",
+      "subtitle": "Termal Kaçak Yayılma Bariyeri",
+      "overview": [
+        "SFEX Termal Bariyer, yanmaz/ısı kalkanı performansı kullanarak batarya termal kaçak yangın yayılımını önlemek için tasarlanmış bir üründür. Bir yangın olayı sırasında alevlerin ve yüksek sıcaklıkların yangın bölmesine transferini etkili bir şekilde engeller."
+      ],
+      "features": [
+        "Ürün, FR Board (yanmaz takviyeli plastik) temel alınarak çok katmanlı işleme yoluyla yangın direnci ve ısı kalkanı performansının yanı sıra çekme mukavemeti artırılarak geliştirilmiştir.",
+        "Batarya Rafı (ESS Ünitesi), Kablo Koruma Ürünü"
+      ],
+      "specifications": [
+        {
+          "title": "SFEX Thermal Barrier",
+          "items": [
+            {
+              "label": "Tip",
+              "value": "Termal bariyer / bölme"
+            },
+            {
+              "label": "Kategori",
+              "value": "Refrakter Malzemeler"
+            },
+            {
+              "label": "Uygulama",
+              "value": "Batarya rafları, ESS kurulumları"
+            },
+            {
+              "label": "İşlev",
+              "value": "Termal kaçak yayılımını önleme"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

@@ -1,5 +1,6 @@
 import SubPageLayout from "@/components/SubPageLayout";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function MissionPage() {
   const t = useTranslations("SubPages");
@@ -14,18 +15,42 @@ export default function MissionPage() {
   return (
     <SubPageLayout
       title={t("aboutTitle")}
-      heroImage="/hero1.jpg"
+      heroImage="/company.jpg"
       sideNav={sideNav}
     >
       <div>
-        <h3 className="text-3xl md:text-4xl font-bold text-[#222] mb-8">
-          {t("missionTitle")}
-        </h3>
-        <div className="text-center py-16">
-          <p className="text-2xl md:text-3xl font-light text-sfex-red mb-4">
-            {t("missionText")}
-          </p>
-          <p className="text-xl text-[#222] font-bold">SFEX Tech Co., Ltd.</p>
+        <p className="text-2xl md:text-3xl font-light text-sfex-red mb-4 text-center">
+          {t("missionText")}
+        </p>
+        <div className="mb-12">
+          <Image
+            src="/extras/mission.png"
+            alt="Mission"
+            width={1200}
+            height={600}
+            className="w-full h-auto object-contain"
+          />
+        </div>
+        <div className="py-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {Array.from({ length: 17 }, (_, i) => {
+              const num = i + 1;
+              const pngs = [6, 12, 13, 14, 15, 16, 17];
+              const upperPngs = [8, 9];
+              const ext = pngs.includes(num) ? "png" : upperPngs.includes(num) ? "PNG" : "jpg";
+              return (
+                <div key={num} className="border border-gray-100 p-2 bg-white shadow-sm hover:shadow-md transition-shadow">
+                  <div className="relative aspect-[1/1.4] overflow-hidden">
+                    <img
+                      src={`/certificates/certificate_p${num}.${ext}`}
+                      alt={`Certificate ${num}`}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </SubPageLayout>

@@ -1,17 +1,20 @@
 import { getRequestConfig } from "next-intl/server";
-import { notFound } from "next/navigation";
 
-const locales = ["en", "tr"];
+const locales = ["en", "tr"] as const;
+type Locale = (typeof locales)[number];
+
+const messagesMap: Record<Locale, () => Promise<any>> = {
+  en: () => import("../messages/en.json").then((m) => m.default),
+  tr: () => import("../messages/tr.json").then((m) => m.default),
+};
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  const locale = await requestLocale;
+  const raw = await requestLocale;
 
-  if (!locales.includes(locale as any)) {
-    notFound();
-  }
+  const locale: Locale = locales.includes(raw as Locale) ? (raw as Locale) : "tr";
 
   return {
     locale,
-    messages: (await import(`../messages/${locale}.json`)).default,
+    messages: await messagesMap[locale](),
   };
 });

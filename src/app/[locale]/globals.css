@@ -105,8 +105,8 @@ body {
 .product-card .more-btn {
   width: 32px;
   height: 32px;
-  border: 1px solid #cfcfcf;
   position: relative;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,11 +131,44 @@ body {
   height: 12px;
 }
 
-.product-card:hover .more-btn {
-  background-color: #c3181f;
-}
-
 .product-card:hover .more-btn::before,
 .product-card:hover .more-btn::after {
   background-color: #fff;
+}
+
+/* Heading Highlight Effect */
+.heading-highlight {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.heading-highlight::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 150%;
+  height: 30px;
+  background-color: rgba(195, 24, 31, 0.1);
+  z-index: -1;
+}
+
+.heading-highlight2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.heading-highlight2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 120%;
+  height: 30px;
+  background-color: rgba(195, 24, 31, 0.1);
+  z-index: -1;
 }

@@ -30,16 +30,19 @@ export default function Navbar() {
   );
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
 
-  const isActiveExact = (href: string) => pathname === `/${locale}${href}`;
+  const isActiveItem = (item: NavItem) => {
+    const fullHref = `/${locale}${item.href}`;
+    if (pathname === fullHref || (item.href !== "/" && pathname.startsWith(`${fullHref}/`))) return true;
 
-  const isActiveGroup = (href: string) =>
-    pathname === `/${locale}${href}` ||
-    pathname.startsWith(`/${locale}${href}/`);
+    // Check if any child is active
+    if (item.children?.some(child => {
+      const childFullHref = `/${locale}${child.href}`;
+      return pathname === childFullHref || pathname.startsWith(`${childFullHref}/`);
+    })) {
+      return true;
+    }
 
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLocale = e.target.value === "eng" ? "en" : "tr";
-    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.push(newPath);
+    return false;
   };
 
   const changeLanguage = (lang: "tr" | "eng") => {
@@ -81,7 +84,7 @@ export default function Navbar() {
     },
     {
       name: t("product"),
-      href: "/products/sfex-line",
+      href: "/products/sfex-pad",
       children: [
         { name: "SFEX Pad", href: "/products/sfex-pad" },
         { name: "SFEX Hi 100", href: "/products/sfex-hi100" },
@@ -125,7 +128,7 @@ export default function Navbar() {
                   href={`/${locale}${link.href}`}
                   className={[
                     "flex items-center justify-center w-full text-[18px] font-poppins font-medium transition-colors duration-200 text-center leading-tight px-2 gap-3",
-                    isActiveGroup(link.href)
+                    isActiveItem(link)
                       ? "text-sfex-red"
                       : "text-[#333] hover:bg-sfex-red hover:text-white",
                   ].join(" ")}
@@ -142,8 +145,8 @@ export default function Navbar() {
                         href={`/${locale}${child.href}`}
                         className={[
                           "block px-5 py-3 text-[14px] text-center transition-colors",
-                          isActiveExact(child.href)
-                            ? "text-sfex-red font-semibold"
+                          pathname === `/${locale}${child.href}`
+                            ? "text-sfex-red"
                             : "text-[#555] hover:text-[#222] hover:font-medium",
                         ].join(" ")}
                       >
@@ -176,11 +179,11 @@ export default function Navbar() {
             </svg>
           </div>
           {isLangMenuOpen && (
-            <div className="absolute top-10 mt-5 right-10 w-24 bg-white shadow-lg rounded-md border overflow-hidden">
+            <div className="absolute top-10 mt-5 right-10 w-24 bg-white shadow-lg rounded-md border border-gray-400 overflow-hidden">
               <button
                 type="button"
                 onClick={() => changeLanguage("tr")}
-                className="cursor-pointer block w-full text-left px-4 py-2 hover:bg-gray-200 text-[14px] font-medium text-[#333] border-b"
+                className="cursor-pointer block w-full text-left px-4 py-2 hover:bg-gray-200 text-[14px] font-medium text-[#333] border-b border-gray-300"
               >
                 TR
               </button>

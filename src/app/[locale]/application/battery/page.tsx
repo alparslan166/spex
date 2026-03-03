@@ -15,34 +15,45 @@ export default function BatteryPage() {
   return (
     <SubPageLayout
       title={t("techAppTitle")}
-      heroImage="/hero3.jpg"
       sideNav={sideNav}
     >
-      <h3 className="text-3xl font-bold text-[#222] mb-10">
-        {t("batteryHeading")}
-      </h3>
+      <div className="flex justify-center mb-10">
+        <h3 className="heading-highlight text-3xl font-bold text-[#222]">
+          {t("batteryHeading")}
+        </h3>
+      </div>
 
-      <div className="space-y-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="border border-gray-200 p-8">
-            <h5 className="text-lg font-bold text-[#222] mb-3">
-              1. Fireproof Bulkhead Between Battery Racks
-            </h5>
-            <p className="text-[15px] text-[#555] leading-relaxed">
-              SFEX Thermal Barrier installed between battery racks prevents
-              thermal runaway propagation from spreading to adjacent cells.
-            </p>
-          </div>
-          <div className="border border-gray-200 p-8">
-            <h5 className="text-lg font-bold text-[#222] mb-3">
-              2. Battery Storage Rack
-            </h5>
-            <p className="text-[15px] text-[#555] leading-relaxed">
-              Complete battery storage solution with integrated thermal barrier
-              for maximum fire safety.
-            </p>
-          </div>
+      <div className="space-y-16">
+        <h4 className="text-xl font-bold text-sfex-red mb-10 mt-5">
+          {t("batterySolutionTitle")}
+        </h4>
+
+        <div>
+          <h4 className="text-2xl font-bold text-[#333] mb-6">
+            {t("batteryBulkhead")}
+          </h4>
+          <img
+            src="/battery/ex1.png"
+            alt="Fireproof Bulkhead"
+            className="h-auto rounded shadow-lg"
+          />
         </div>
+
+        <hr className="border-gray-300" />
+
+        <div>
+          <h4 className="text-2xl font-bold text-[#333] mb-6">
+            {t("batteryStorage")}
+          </h4>
+          <img
+            src="/battery/ex2.png"
+            alt="Battery Storage Rack"
+            className="h-auto rounded shadow-lg"
+          />
+        </div>
+
+        <hr className="border-gray-300" />
+
       </div>
     </SubPageLayout>
   );

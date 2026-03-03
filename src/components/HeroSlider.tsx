@@ -27,14 +27,14 @@ export default function HeroSlider() {
   }, [slides.length]);
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[calc(75vh)] overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[calc(85vh)] overflow-hidden">
       {/* Slides with fade effect */}
       {slides.map((slide, index) => {
         const isActive = index === activeIndex;
 
         return (
           <div key={index} className={`hero-slide ${isActive ? "active" : ""}`}>
-            {/* ✅ Image zoom: yazılar bittikten sonra başlasın */}
+            {/* Image zoom: yazılar bittikten sonra başlasın */}
             <motion.div
               key={`img-${activeIndex}`}
               className="absolute inset-0"
@@ -63,13 +63,13 @@ export default function HeroSlider() {
                   initial={{ x: -120, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
-                  className="text-center px-6"
+                  className="text-center px-6 scale-90"
                 >
                   <motion.h3
                     initial={{ x: -120, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8 }}
-                    className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+                    className="text-3xl md:text-5xl lg:text-5xl font-bold text-white mb-6"
                   >
                     {slide.title}
                   </motion.h3>
@@ -90,7 +90,7 @@ export default function HeroSlider() {
       })}
 
       {/* Dots navigation */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-3 z-10 scale-110">
         {slides.map((_, index) => (
           <button
             key={index}

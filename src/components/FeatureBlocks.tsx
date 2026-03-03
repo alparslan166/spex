@@ -12,7 +12,7 @@ export default function FeatureBlocks() {
         <div className="flex flex-col md:flex-row gap-5 md:gap-[30px]">
           {/* SFEX Tech Block */}
           <div
-            className="flex-1 bg-cover bg-center bg-no-repeat p-[65px_55px] text-white rounded-sm"
+            className="flex-1 bg-cover bg-center bg-no-repeat p-[65px_55px] text-white rounded-sm-1 bg-cover bg-center bg-no-repeat p-[65px_55px] text-white rounded-sm"
             style={{
               backgroundImage: "url('/section1_bg.png')",
               backgroundColor: "#7a1a1a",
@@ -23,7 +23,7 @@ export default function FeatureBlocks() {
               <dd className="text-lg leading-relaxed">{t("techSubtitle")}</dd>
             </dl>
             <a
-              href="#"
+              href="/application/panel-fire"
               className="inline-block mt-5 border border-white px-[25px] py-[15px] text-white text-sm font-medium hover:bg-black/30 transition-all duration-200"
             >
               {t("techButton")}
@@ -43,7 +43,7 @@ export default function FeatureBlocks() {
               <dd className="text-lg leading-relaxed">{t("certSubtitle")}</dd>
             </dl>
             <a
-              href="#"
+              href="/technology/certificates"
               className="inline-block mt-5 border border-white px-[25px] py-[15px] text-white text-sm font-medium hover:bg-black/30 transition-all duration-200"
             >
               {t("certButton")}

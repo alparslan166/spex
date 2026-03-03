@@ -1,24 +1,3 @@
-<div className="absolute top-full right-0 mt-2 w-24 bg-white shadow-lg rounded-md border z-[999] overflow-hidden">
-      <button
-        type="button"
-        onClick={() => changeLanguage("tr")}
-        className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-[14px] font-medium text-[#333]"
-      >
-        TR
-      </button>
-      <button
-        type="button"
-        onClick={() => changeLanguage("eng")}
-        className="block w-full text-left px-4 py-2 hover:bg-gray-100 text-[14px] font-medium text-[#333]"
-      >
-        ENG
-      </button>
-    </div>
-
-
-    <button
-    onClick={() => changeLanguage(locale === "tr" ? "eng" : "tr")}
-    className="px-3 py-1 text-sm font-semibold"
->
-    {locale === "tr" ? "ENG" : "TR"}
-</button>
+https://www.sfextech.com/en/?type=company_mission buradaki korece diplomalar
+https://www.sfextech.com/en/?type=tech_place buradaki korece marka/şirket yazıları(altlarına türkçe/ingilizce açıklama eklenebilir mi?)
+https://www.sfextech.com/en/?type=tech_certify buradaki korece sertifikalar

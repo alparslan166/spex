@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -23,9 +24,10 @@ export default async function RootLayout(props: {
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="antialiased min-h-screen">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {props.children}
+          <ScrollToTop />
           <Footer />
         </NextIntlClientProvider>
       </body>

@@ -23,8 +23,7 @@ export default function SfexTechnologyPage() {
 
   return (
     <SubPageLayout
-      title={t("techIntroTitle")}
-      heroImage="/hero2.jpg"
+      title={t("techTitle")}
       sideNav={sideNav}
     >
       <div className="mb-4 text-center">
@@ -42,42 +41,42 @@ export default function SfexTechnologyPage() {
           allowFullScreen
         />
       </div>
-      
+
       <div className="px-4 md:px-0 py-8">
-  <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto">
 
-    <h4 className="text-[32px] md:text-[34px] font-poppins font-medium text-[#222] text-center mb-6 mt-16">
-      {t("whySfex")}
-    </h4>
+          <h4 className="text-[32px] md:text-[34px] font-poppins font-medium text-[#222] text-center mb-6 mt-16">
+            {t("whySfex")}
+          </h4>
 
-    <ul className="">
-      {whySfexItems.map((item, i) => (
-        <li key={i} className="flex items-start gap-3 py-4 md:pt-3 md:pb-2">
-          {/* Check circle */}
-          <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border-3 border-sfex-red/20 text-sfex-red/20">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M20 6 9 17l-5-5" />
-            </svg>
-          </span>
+          <ul className="">
+            {whySfexItems.map((item, i) => (
+              <li key={i} className="flex items-start gap-3 py-4 md:pt-3 md:pb-2">
+                {/* Check circle */}
+                <span className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border-3 border-sfex-red/20 text-sfex-red/20">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
 
-          {/* Text */}
-          <span className="text-[16px] md:text-[18px] font-medium text-[#222] leading-snug pb-2 border-b border-gray-200">
-            {item}
-          </span>
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
+                {/* Text */}
+                <span className="text-[16px] md:text-[18px] font-medium text-[#222] leading-snug pb-2 border-b border-gray-200">
+                  {item}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </SubPageLayout>
   );
 }

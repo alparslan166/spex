@@ -33,13 +33,12 @@ export default function SubPageLayout({
     <div>
       {/* Hero Banner */}
       <div
-        className="relative w-full h-[200px] md:h-[330px] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+        className="relative w-full h-[200px] md:h-[330px] bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: heroImage ? `url('${heroImage}')` : undefined,
-          backgroundColor: heroImage ? undefined : "#333",
+          backgroundImage: `url('${heroImage || "/blue-bg.jpg"}')`,
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0" />
         <h2 className="relative z-10 text-3xl md:text-5xl font-bold text-white text-center mt-20">
           {activeItem?.name ?? title}
         </h2>
@@ -57,11 +56,10 @@ export default function SubPageLayout({
                 <li key={item.href}>
                   <Link
                     href={fullHref}
-                    className={`border-b-2 pb-4 px-6 transition-colors ${
-                      isActive
-                        ? "text-sfex-red border-sfex-red"
-                        : "border-transparent text-[#333] hover:text-sfex-red"
-                    }`}
+                    className={`border-b-2 pb-4 px-6 transition-colors ${isActive
+                      ? "text-sfex-red border-sfex-red"
+                      : "border-transparent text-[#333] hover:text-sfex-red"
+                      }`}
                   >
                     {item.name}
                   </Link>

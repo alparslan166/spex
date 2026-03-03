@@ -1,29 +1,50 @@
 import ProductPageTemplate from "@/components/ProductPageTemplate";
+import { useTranslations } from "next-intl";
 
 export default function SfexAPTapePage() {
+  const t = useTranslations("ProductDetails.sfex-ap-tape");
+
+  const overview = [t("overview.0"), t("overview.1")];
+  const features = [
+    t("features.0"),
+    t("features.1"),
+    t("features.2"),
+    t("features.3"),
+    t("features.4"),
+  ];
+
+  const specifications = [
+    {
+      title: t("specifications.0.title"),
+      items: [
+        { label: t("specifications.0.items.0.label"), value: t("specifications.0.items.0.value") },
+        { label: t("specifications.0.items.1.label"), value: t("specifications.0.items.1.value") },
+        { label: t("specifications.0.items.2.label"), value: t("specifications.0.items.2.value") },
+        { label: t("specifications.0.items.3.label"), value: t("specifications.0.items.3.value") },
+        { label: t("specifications.0.items.4.label"), value: t("specifications.0.items.4.value") },
+        { label: t("specifications.0.items.5.label"), value: t("specifications.0.items.5.value") },
+      ],
+    },
+    {
+      title: t("specifications.1.title"),
+      items: [
+        { label: t("specifications.1.items.0.label"), value: t("specifications.1.items.0.value") },
+        { label: t("specifications.1.items.1.label"), value: t("specifications.1.items.1.value") },
+        { label: t("specifications.1.items.2.label"), value: t("specifications.1.items.2.value") },
+        { label: t("specifications.1.items.3.label"), value: t("specifications.1.items.3.value") },
+        { label: t("specifications.1.items.4.label"), value: t("specifications.1.items.4.value") },
+        { label: t("specifications.1.items.5.label"), value: t("specifications.1.items.5.value") },
+      ],
+    },
+  ];
+
   return (
     <ProductPageTemplate
-      productName="SFEX AP Tape"
-      subtitle="Arc Proof Tape - Prevention of Fire Spreading"
-      overview={[
-        "SFEX AP Tape prevents fire spreading through the incoming/outgoing wires of the electrical panel.",
-        "It serves as a backup solution for fire prevention, especially when initial suppression may not be sufficient.",
-      ]}
-      features={[
-        "Wraps around input/output cables to prevent fire spreading.",
-        "Fire extinguishing and fire retardancy properties.",
-        "Prevents spread to Cable Pit or other areas outside the electric panel.",
-        "Easy installation — simply wrap 1.5 to 2 times around cables.",
-        "Works as a backup solution for dual/triple fire protection.",
-      ]}
-      specifications={[
-        { label: "Type", value: "Tape (wrapping)" },
-        {
-          label: "Application",
-          value: "Input/output cables of electric panels",
-        },
-        { label: "Installation", value: "Wrap 1.5-2 times around cables" },
-      ]}
+      productName={t("name")}
+      subtitle={t("subtitle")}
+      overview={overview}
+      features={features}
+      specifications={specifications}
     />
   );
 }

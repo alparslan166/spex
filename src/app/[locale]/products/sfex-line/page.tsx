@@ -1,29 +1,56 @@
 import ProductPageTemplate from "@/components/ProductPageTemplate";
+import { useTranslations } from "next-intl";
 
 export default function SfexLinePage() {
+  const t = useTranslations("ProductDetails.sfex-line");
+
+  const overview = [t("overview.0"), t("overview.1")];
+  const features = [t("features.0"), t("features.1"), t("features.2"), t("features.3")];
+
+  const specifications = [
+    {
+      title: t("specifications.0.title"),
+      items: [
+        { label: t("specifications.0.items.0.label"), value: t("specifications.0.items.0.value") },
+        { label: t("specifications.0.items.1.label"), value: t("specifications.0.items.1.value") },
+        { label: t("specifications.0.items.2.label"), value: t("specifications.0.items.2.value") },
+        { label: t("specifications.0.items.3.label"), value: t("specifications.0.items.3.value") },
+        { label: t("specifications.0.items.4.label"), value: t("specifications.0.items.4.value") },
+        { label: t("specifications.0.items.5.label"), value: t("specifications.0.items.5.value") },
+      ],
+    },
+    {
+      title: t("specifications.1.title"),
+      items: [
+        { label: t("specifications.1.items.0.label"), value: t("specifications.1.items.0.value") },
+        { label: t("specifications.1.items.1.label"), value: t("specifications.1.items.1.value") },
+        { label: t("specifications.1.items.2.label"), value: t("specifications.1.items.2.value") },
+        { label: t("specifications.1.items.3.label"), value: t("specifications.1.items.3.value") },
+        { label: t("specifications.1.items.4.label"), value: t("specifications.1.items.4.value") },
+        { label: t("specifications.1.items.5.label"), value: t("specifications.1.items.5.value") },
+      ],
+    },
+    {
+      title: t("specifications.2.title"),
+      items: [
+        { label: t("specifications.2.items.0.label"), value: t("specifications.2.items.0.value") },
+        { label: t("specifications.2.items.1.label"), value: t("specifications.2.items.1.value") },
+        { label: t("specifications.2.items.2.label"), value: t("specifications.2.items.2.value") },
+        { label: t("specifications.2.items.3.label"), value: t("specifications.2.items.3.value") },
+        { label: t("specifications.2.items.4.label"), value: t("specifications.2.items.4.value") },
+        { label: t("specifications.2.items.5.label"), value: t("specifications.2.items.5.value") },
+      ],
+    },
+  ];
+
   return (
     <ProductPageTemplate
-      productName="SFEX Line"
-      subtitle="Stand-alone Fire Extinguisher for Medium and Large Electric Panels"
-      overview={[
-        "SFEX Line is a fire extinguisher that can be installed in medium and large electrical panel or attached to the equipment to suppress fires at an early stage.",
-        "It is a flexible rope-type extinguisher that can be installed even in narrow spaces where ignition is anticipated.",
-      ]}
-      features={[
-        "The flexible rope type can be installed near the ignition point, providing excellent performance to suppress fires at an early stage.",
-        "It is a stand-alone polymer chemical-based device with no malfunction and no maintenance cost.",
-        "The fire extinguishing agent is a solid aerosol compound based on nitrate.",
-        "The SFEX Granule all-in-one function = A fire extinguisher storage tank + temperature sensor + nozzle",
-      ]}
-      specifications={[
-        { label: "Type", value: "Flexible rope type" },
-        { label: "Agent", value: "Solid aerosol compound (nitrate-based)" },
-        {
-          label: "Activation",
-          value: "Temperature-sensitive (self-activating)",
-        },
-        { label: "Maintenance", value: "No maintenance required" },
-      ]}
+      productName={t("name")}
+      subtitle={t("subtitle")}
+      videoUrl="https://www.youtube.com/embed/FnfzSNpjFTc?si=pNxH7emtWW_LXI_B"
+      overview={overview}
+      features={features}
+      specifications={specifications}
     />
   );
 }
