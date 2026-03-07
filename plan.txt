@@ -1,0 +1,4 @@
+https://spex-nu.vercel.app/tr/about/mission bu sayfadaki resim - /extras/mission.png -> /extras/mission-turkish.png
+https://spex-nu.vercel.app/tr/application/panel-fire bu sayfadaki resim - /electric/3stepsolution.png -> /electric/3stepsolution-turkish.png
+https://spex-nu.vercel.app/tr/application/panel-fire bu sayfadaki resim - /electric/example2.png -> /electric/example2-turkish.png
+https://spex-nu.vercel.app/tr/products/sfex-detector bu sayfadaki resim - /extras/example1.png -> /extras/example1-turkish.png

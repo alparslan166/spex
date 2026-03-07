@@ -1,8 +1,9 @@
 import ProductPageTemplate from "@/components/ProductPageTemplate";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function SfexDetectorPage() {
   const t = useTranslations("ProductDetails.sfex-detector");
+  const locale = useLocale();
 
   const specifications = [
     {
@@ -23,7 +24,7 @@ export default function SfexDetectorPage() {
       videoUrl="https://www.youtube.com/embed/_2D8HE1aEDE?si=uafMSsVSgDqFUfTB"
       overview={[t("overview.0")]}
       features={[]}
-      featureImage="/extras/example1.png"
+      featureImage={locale === 'tr' ? "/extras/example1-turkish.jpg" : "/extras/example1.png"}
       specifications={specifications}
     >
       <div className="mt-12">

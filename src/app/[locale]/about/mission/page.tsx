@@ -1,10 +1,11 @@
 import SubPageLayout from "@/components/SubPageLayout";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 
 export default function MissionPage() {
   const t = useTranslations("SubPages");
   const tn = useTranslations("Navbar");
+  const locale = useLocale();
 
   const sideNav = [
     { name: tn("aboutMission"), href: "/about/mission" },
@@ -24,7 +25,7 @@ export default function MissionPage() {
         </p>
         <div className="mb-12">
           <Image
-            src="/extras/mission.png"
+            src={locale === 'tr' ? "/extras/mission-turkish.jpg" : "/extras/mission.png"}
             alt="Mission"
             width={1200}
             height={600}

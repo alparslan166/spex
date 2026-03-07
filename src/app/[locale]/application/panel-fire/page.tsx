@@ -1,9 +1,10 @@
 import SubPageLayout from "@/components/SubPageLayout";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function PanelFirePage() {
   const t = useTranslations("SubPages");
   const tn = useTranslations("Navbar");
+  const locale = useLocale();
 
   const sideNav = [
     { name: tn("appPanel"), href: "/application/panel-fire" },
@@ -25,7 +26,7 @@ export default function PanelFirePage() {
 
       <div className="flex justify-center mb-16">
         <img
-          src="/electric/3stepsolution.png"
+          src={locale === 'tr' ? "/electric/3stepsolution-turkish.jpg" : "/electric/3stepsolution.png"}
           alt="3 Step Solution"
           className="w-full max-w-[900px] h-auto"
         />
@@ -113,7 +114,7 @@ export default function PanelFirePage() {
                 </p>
               </div>
               <img
-                src="/electric/example2.png"
+                src={locale === 'tr' ? "/electric/example2-turkish.jpg" : "/electric/example2.png"}
                 alt="Installation Example 2"
                 className="w-full h-auto rounded shadow-sm"
               />
