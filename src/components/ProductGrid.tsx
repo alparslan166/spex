@@ -2,12 +2,14 @@
 
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 
 export default function ProductGrid() {
   const t = useTranslations("Products");
+  const locale = useLocale();
 
   const autoplay = Autoplay({
     delay: 4000,          // 3.5 saniye
@@ -32,15 +34,15 @@ export default function ProductGrid() {
   }, [emblaApi]);
 
   const products = [
-    { name: t("p1"), desc: t("p1_desc"), image: "/products/p1.jpg" },
-    { name: t("p2"), desc: t("p2_desc"), image: "/products/p2.jpg" },
-    { name: t("p3"), desc: t("p3_desc"), image: "/products/p3.jpg" },
-    { name: t("p4"), desc: t("p4_desc"), image: "/products/p4.jpg" },
-    { name: t("p5"), desc: t("p5_desc"), image: "/products/p5.jpg" },
-    { name: t("p6"), desc: t("p6_desc"), image: "/products/p6.jpg" },
-    { name: t("p7"), desc: t("p7_desc"), image: "/products/p7.jpg" },
-    { name: t("p8"), desc: t("p8_desc"), image: "/products/p8.jpg" },
-    { name: t("p9"), desc: t("p9_desc"), image: "/products/p9.jpg" },
+    { name: t("p1"), desc: t("p1_desc"), image: "/products/p1.jpg", slug: "sfex-line" },
+    { name: t("p2"), desc: t("p2_desc"), image: "/products/p2.jpg", slug: "sfex-pad" },
+    { name: t("p3"), desc: t("p3_desc"), image: "/products/p3.jpg", slug: "sfex-hi100" },
+    { name: t("p4"), desc: t("p4_desc"), image: "/products/p4.jpg", slug: "sfex-ap-tape" },
+    { name: t("p5"), desc: t("p5_desc"), image: "/products/p5.jpg", slug: "sfex-ct-manteau" },
+    { name: t("p6"), desc: t("p6_desc"), image: "/products/p6.jpg", slug: "sfex-inside" },
+    { name: t("p7"), desc: t("p7_desc"), image: "/products/p7.jpg", slug: "sfex-detector" },
+    { name: t("p8"), desc: t("p8_desc"), image: "/products/p8.jpg", slug: "sfex-fr-board" },
+    { name: t("p9"), desc: t("p9_desc"), image: "/products/p9.jpg", slug: "sfex-thermal" },
   ];
 
   return (
@@ -61,27 +63,29 @@ export default function ProductGrid() {
                   key={index}
                   className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.333%] lg:flex-[0_0_25%] xl:flex-[0_0_20%] min-w-0 px-2 shadow-x "
                 >
-                  <div className="product-card bg-white cursor-pointer group h-full flex flex-col p-2 border border-gray-100 hover:border-red-400">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <Image
-                        src={product.image}
-                        alt={product.name}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                    </div>
-                    <div className="p-5 flex flex-col flex-1">
-                      <strong className="block text-[16px] font-medium text-[#222] mb-2">
-                        {product.name}
-                      </strong>
-                      <p className="text-[13px] text-[#666] leading-relaxed mb-4 flex-1 line-clamp-3">
-                        {product.desc}
-                      </p>
-                      <div className="flex justify-center">
-                        <span className="more-btn shadow-2xl border border-gray-200" />
+                  <Link href={`/${locale}/products/${product.slug}`} className="block h-full">
+                    <div className="product-card bg-white cursor-pointer group h-full flex flex-col p-2 border border-gray-100 hover:border-red-400">
+                      <div className="relative aspect-[4/3] overflow-hidden">
+                        <Image
+                          src={product.image}
+                          alt={product.name}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                      <div className="p-5 flex flex-col flex-1">
+                        <strong className="block text-[16px] font-medium text-[#222] mb-2">
+                          {product.name}
+                        </strong>
+                        <p className="text-[13px] text-[#666] leading-relaxed mb-4 flex-1 line-clamp-3">
+                          {product.desc}
+                        </p>
+                        <div className="flex justify-center">
+                          <span className="more-btn shadow-2xl border border-gray-200" />
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
             </div>

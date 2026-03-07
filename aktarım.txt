@@ -1,3 +1,6 @@
-https://www.sfextech.com/en/?type=company_mission buradaki korece diplomalar
-https://www.sfextech.com/en/?type=tech_place buradaki korece marka/şirket yazıları(altlarına türkçe/ingilizce açıklama eklenebilir mi?)
-https://www.sfextech.com/en/?type=tech_certify buradaki korece sertifikalar
+https://www.sfextech.com/en/?type=company_mission
+ buradaki korece diploma resimleri
+https://www.sfextech.com/en/?type=tech_place 
+buradaki korece marka/şirket yazıları(altlarına türkçe/ingilizce açıklama eklenebilir mi?)
+https://www.sfextech.com/en/?type=tech_certify 
+buradaki korece sertifika resimleri
