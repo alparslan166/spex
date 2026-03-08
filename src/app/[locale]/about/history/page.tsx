@@ -1,3 +1,4 @@
+"use client";
 import SubPageLayout from "@/components/SubPageLayout";
 import { useTranslations } from "next-intl";
 

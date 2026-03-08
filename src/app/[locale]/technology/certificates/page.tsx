@@ -1,5 +1,4 @@
 "use client";
-
 import SubPageLayout from "@/components/SubPageLayout";
 import { useTranslations } from "next-intl";
 import { useState } from "react";

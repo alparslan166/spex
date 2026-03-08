@@ -1,3 +1,4 @@
+"use client";
 import ProductPageTemplate from "@/components/ProductPageTemplate";
 import { useTranslations, useLocale } from "next-intl";
 
