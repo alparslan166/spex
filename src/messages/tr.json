@@ -13,7 +13,8 @@
     "appCable": "Kablo Yangını",
     "appOutlet": "Priz Yangını",
     "appBattery": "Batarya Termal Kaçağı",
-    "product": "Ürün Tanıtımı",
+    "appChimney": "Baca Yangını",
+    "product": "Ürünlerimiz",
     "productCat1": "Elektrik Yangınlarının İlk Söndürülmesi",
     "productCat2": "Refrakter Malzeme Geliştirme",
     "selectCategory": "Ürünleri görüntülemek için bir kategori seçin"
@@ -85,6 +86,8 @@
     "whySfex6": "Ürün için bakım gerekmez",
     "whySfex7": "Ek ekipman gerektirmeyen bağımsız yöntem",
     "majorCustomerTitle": "Büyük Müşteriler",
+    "techCertTitle": "Sertifika ve Test Raporu",
+    "techTitle": "SFEX Teknoloji",
     "certPageTitle": "Sertifika ve Test Raporu",
     "cableHorizontal": "1. Yatay Bölge : SFEX CT Manteau",
     "cableVertical": "2. Dikey Bölge : SFEX AP Tape",
@@ -103,6 +106,23 @@
     "outletFireHeading": "Elektrik Yangınının Tam Önlenmesi",
     "batteryTitle": "Batarya Termal Kaçağı",
     "batteryHeading": "Batarya Termal Kaçak Yayılma Bariyeri",
+    "chimneyFireTitle": "Baca Yangınları",
+    "chimneyFireHeading": "Baca Yangınları",
+    "chimneyLeadTitle": "Baca Yanarsa, Zaman Kaybetmek Lüks Değil.",
+    "chimneyLeadText": "Baca yangınları, ani ve hızlı gelişen yapısıyla geleneksel söndürme sistemlerini devre dışı bırakır. Çoğu konvansiyonel cihaz 150°C'nin altında devreye girecek şekilde tasarlanmıştır — oysa bir bacanın normal çalışma sıcaklığı bu eşiği çoktan geride bırakmıştır. Sonuç: istenmeyen erken tetiklenme ya da yangın anında tamamen işlevsizlik.",
+    "chimneyWhyTitle": "Neden Geleneksel Sistemler Bacalarda Çalışmaz?",
+    "chimneyWhyText": "Bacalar, ekstrem sıcaklık değişimlerinin yaşandığı, dar ve uzun yapılardır. Standart yangın söndürme cihazları bu ortam için tasarlanmamıştır. Yanlış aktivasyon sıcaklığı, zorlu montaj koşulları ve periyodik baca temizliklerinde çıkarılamaması gibi sorunlar, geleneksel çözümleri pratik olmaktan çıkarır.",
+    "chimneySolutionTitle": "SFEX Line ile Baca Yangınlarına Kalıcı Çözüm",
+    "chimneySolutionText": "SFEX Line, hem A Sınıfı hem de B Sınıfı yangınlara karşı etkili aerosol söndürücü maddesiyle baca ortamı için özel olarak uygun bir çözümdür.",
+    "chimneyFeature1Title": "Yüksek Aktivasyon Sıcaklığı",
+    "chimneyFeature1Text": "Normal baca sıcaklıklarında tetiklenmez. Yalnızca gerçek bir yangın koşulunda devreye girer. Yanlış alarm riski yoktur.",
+    "chimneyFeature2Title": "Kolay Montaj ve Temizlik Uyumluluğu",
+    "chimneyFeature2Text": "Üst kısma tek bir askı kancasıyla monte edilir. Rutin baca temizliği sırasında kolayca çıkarılır, temizlik sonrası yeniden takılır. Bakım süreci kesintisiz devam eder.",
+    "chimneySizingTitle": "Bacaya Özel Boyutlandırma",
+    "chimneySizing1": "50 cm'ye kadar çaplı bacalar → Tek SFEX Line yeterlidir",
+    "chimneySizing2": "50 cm üzeri çaplı bacalar → Çift hat konfigürasyonu önerilir",
+    "chimneyBefore": "Öncesi",
+    "chimneyAfter": "Sonrası",
     "overview": "Genel Bakış",
     "features": "Özellikler",
     "specification": "Teknik Özellikler",
@@ -495,7 +515,7 @@
       "overview": [
         "SFEX FR Board, dünyanın ilk yanmaz takviyeli plastiğidir.",
         "Mevcut elyaf takviyeli plastiklerin avantajlarını korurken yanmazlık performansı sağlar.",
-        "Ayrıca bu ürün, Arazi, Altyapı ve Ulaştırma Bakanlığı'nın 2022-84 Sayılı Tebliği uyarınca yanmazlık testi ve gaz tehlikesi testini başarıyla geçmiştir."
+        "Ayrıca bu ürün, Kore Arazi, Altyapı ve Ulaştırma Bakanlığı'nın 2022-84 Sayılı Tebliği uyarınca yanmazlık testi ve gaz tehlikesi testini başarıyla geçmiştir."
       ],
       "features": [
         "Yanmaz Takviyeli Plastik",
@@ -760,7 +780,7 @@
         "Söndürme yöntemi : Soğutma + Kimyasal Reaksiyon."
       ],
       "caution": [
-        "Ped içindeki yangın söndürme maddesi FK-5-1-12, havadan 11,4 kat daha ağır bir gaz yoğunluğuna sahiptir.",
+        "Ped içindeki yangın söndürme maddesi FK-5-1-12, havadan 11,4 kat daha ağır bir gaz yoğunluğuna sahiptir. Bu sebeple açık ortamlarda kullanılırsa etkisi azalır, kapalı ortamlarda kullanılması gereklidir.",
         "Bu karakteristik, söndürme maddesinin dikey bir biçimde püskürtülmesine neden olur ve bu da yangın ile ped arasında engeller varsa alttaki yangına ulaşmayabilir.",
         "Sonuç olarak, üste monte edilen yangın söndürücüler karmaşık yapılara sahip panellerde iyi performans göstermeyebilir."
       ],

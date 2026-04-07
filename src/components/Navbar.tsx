@@ -32,13 +32,21 @@ export default function Navbar() {
 
   const isActiveItem = (item: NavItem) => {
     const fullHref = `/${locale}${item.href}`;
-    if (pathname === fullHref || (item.href !== "/" && pathname.startsWith(`${fullHref}/`))) return true;
+    if (
+      pathname === fullHref ||
+      (item.href !== "/" && pathname.startsWith(`${fullHref}/`))
+    )
+      return true;
 
     // Check if any child is active
-    if (item.children?.some(child => {
-      const childFullHref = `/${locale}${child.href}`;
-      return pathname === childFullHref || pathname.startsWith(`${childFullHref}/`);
-    })) {
+    if (
+      item.children?.some((child) => {
+        const childFullHref = `/${locale}${child.href}`;
+        return (
+          pathname === childFullHref || pathname.startsWith(`${childFullHref}/`)
+        );
+      })
+    ) {
       return true;
     }
 
@@ -80,6 +88,7 @@ export default function Navbar() {
         { name: t("appCable"), href: "/application/cable-fire" },
         { name: t("appOutlet"), href: "/application/outlet-fire" },
         { name: t("appBattery"), href: "/application/battery" },
+        { name: t("appChimney"), href: "/application/chimney-fire" },
       ],
     },
     {

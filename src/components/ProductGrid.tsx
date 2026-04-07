@@ -36,7 +36,7 @@ export default function ProductGrid() {
   const products = [
     { name: t("p1"), desc: t("p1_desc"), image: "/products/p1.jpg", slug: "sfex-line" },
     { name: t("p2"), desc: t("p2_desc"), image: "/products/p2.jpg", slug: "sfex-pad" },
-    { name: t("p3"), desc: t("p3_desc"), image: "/products/p3.jpg", slug: "sfex-hi100" },
+    { name: t("p3"), desc: t("p3_desc"), image: "/products/h100.png", slug: "sfex-hi100" },
     { name: t("p4"), desc: t("p4_desc"), image: "/products/p4.jpg", slug: "sfex-ap-tape" },
     { name: t("p5"), desc: t("p5_desc"), image: "/products/p5.jpg", slug: "sfex-ct-manteau" },
     { name: t("p6"), desc: t("p6_desc"), image: "/products/p6.jpg", slug: "sfex-inside" },

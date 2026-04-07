@@ -18,23 +18,59 @@ export default function SfexAPTapePage() {
     {
       title: t("specifications.0.title"),
       items: [
-        { label: t("specifications.0.items.0.label"), value: t("specifications.0.items.0.value") },
-        { label: t("specifications.0.items.1.label"), value: t("specifications.0.items.1.value") },
-        { label: t("specifications.0.items.2.label"), value: t("specifications.0.items.2.value") },
-        { label: t("specifications.0.items.3.label"), value: t("specifications.0.items.3.value") },
-        { label: t("specifications.0.items.4.label"), value: t("specifications.0.items.4.value") },
-        { label: t("specifications.0.items.5.label"), value: t("specifications.0.items.5.value") },
+        {
+          label: t("specifications.0.items.0.label"),
+          value: t("specifications.0.items.0.value"),
+        },
+        {
+          label: t("specifications.0.items.1.label"),
+          value: t("specifications.0.items.1.value"),
+        },
+        {
+          label: t("specifications.0.items.2.label"),
+          value: t("specifications.0.items.2.value"),
+        },
+        {
+          label: t("specifications.0.items.3.label"),
+          value: t("specifications.0.items.3.value"),
+        },
+        {
+          label: t("specifications.0.items.4.label"),
+          value: t("specifications.0.items.4.value"),
+        },
+        {
+          label: t("specifications.0.items.5.label"),
+          value: t("specifications.0.items.5.value"),
+        },
       ],
     },
     {
       title: t("specifications.1.title"),
       items: [
-        { label: t("specifications.1.items.0.label"), value: t("specifications.1.items.0.value") },
-        { label: t("specifications.1.items.1.label"), value: t("specifications.1.items.1.value") },
-        { label: t("specifications.1.items.2.label"), value: t("specifications.1.items.2.value") },
-        { label: t("specifications.1.items.3.label"), value: t("specifications.1.items.3.value") },
-        { label: t("specifications.1.items.4.label"), value: t("specifications.1.items.4.value") },
-        { label: t("specifications.1.items.5.label"), value: t("specifications.1.items.5.value") },
+        {
+          label: t("specifications.1.items.0.label"),
+          value: t("specifications.1.items.0.value"),
+        },
+        {
+          label: t("specifications.1.items.1.label"),
+          value: t("specifications.1.items.1.value"),
+        },
+        {
+          label: t("specifications.1.items.2.label"),
+          value: t("specifications.1.items.2.value"),
+        },
+        {
+          label: t("specifications.1.items.3.label"),
+          value: t("specifications.1.items.3.value"),
+        },
+        {
+          label: t("specifications.1.items.4.label"),
+          value: t("specifications.1.items.4.value"),
+        },
+        {
+          label: t("specifications.1.items.5.label"),
+          value: t("specifications.1.items.5.value"),
+        },
       ],
     },
   ];
@@ -43,6 +79,8 @@ export default function SfexAPTapePage() {
     <ProductPageTemplate
       productName={t("name")}
       subtitle={t("subtitle")}
+      topImage="/products/p4.jpg"
+      videoUrl="https://www.youtube.com/embed/8dq86uiKPJY?si=4kF5NJm1GT1RPI-5"
       overview={overview}
       features={features}
       specifications={specifications}

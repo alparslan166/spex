@@ -1,5 +1,21 @@
 RewriteEngine On
+RewriteBase /
+
+# HTTPS'e zorla
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://sfex.com.tr%{REQUEST_URI} [L,R=301]
+
+# Ana sayfayı /tr/ adresine yönlendir
+RewriteRule ^$ /tr/ [L,R=301]
+
+# Eğer URL gerçek bir dosya veya klasör değilse ve / ile bitmiyorsa sona / ekle
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.+)$ /$1/ [L,R=301]
+
+# Eğer istenen path fiziksel olarak yoksa ama .html karşılığı varsa onu servis et
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ /$1.html [L]

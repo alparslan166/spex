@@ -19,19 +19,43 @@ export default function SfexPadPage() {
     {
       title: t("specifications.0.title"),
       items: [
-        { label: t("specifications.0.items.0.label"), value: t("specifications.0.items.0.value") },
-        { label: t("specifications.0.items.1.label"), value: t("specifications.0.items.1.value") },
-        { label: t("specifications.0.items.2.label"), value: t("specifications.0.items.2.value") },
-        { label: t("specifications.0.items.3.label"), value: t("specifications.0.items.3.value") },
+        {
+          label: t("specifications.0.items.0.label"),
+          value: t("specifications.0.items.0.value"),
+        },
+        {
+          label: t("specifications.0.items.1.label"),
+          value: t("specifications.0.items.1.value"),
+        },
+        {
+          label: t("specifications.0.items.2.label"),
+          value: t("specifications.0.items.2.value"),
+        },
+        {
+          label: t("specifications.0.items.3.label"),
+          value: t("specifications.0.items.3.value"),
+        },
       ],
     },
     {
       title: t("specifications.1.title"),
       items: [
-        { label: t("specifications.1.items.0.label"), value: t("specifications.1.items.0.value") },
-        { label: t("specifications.1.items.1.label"), value: t("specifications.1.items.1.value") },
-        { label: t("specifications.1.items.2.label"), value: t("specifications.1.items.2.value") },
-        { label: t("specifications.1.items.3.label"), value: t("specifications.1.items.3.value") },
+        {
+          label: t("specifications.1.items.0.label"),
+          value: t("specifications.1.items.0.value"),
+        },
+        {
+          label: t("specifications.1.items.1.label"),
+          value: t("specifications.1.items.1.value"),
+        },
+        {
+          label: t("specifications.1.items.2.label"),
+          value: t("specifications.1.items.2.value"),
+        },
+        {
+          label: t("specifications.1.items.3.label"),
+          value: t("specifications.1.items.3.value"),
+        },
       ],
     },
   ];
@@ -40,6 +64,8 @@ export default function SfexPadPage() {
     <ProductPageTemplate
       productName={t("name")}
       subtitle={t("subtitle")}
+      topImage="/products/p2.jpg"
+      videoUrl="https://www.youtube.com/embed/mQ6utV6w0-s?si=8lJfhxNGMagYnXZL"
       overview={overview}
       features={features}
       caution={caution}

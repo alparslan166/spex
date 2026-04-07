@@ -2,11 +2,13 @@
 import SubPageLayout from "@/components/SubPageLayout";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function MissionPage() {
   const t = useTranslations("SubPages");
   const tn = useTranslations("Navbar");
   const locale = useLocale();
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const sideNav = [
     { name: tn("aboutMission"), href: "/about/mission" },
@@ -40,11 +42,16 @@ export default function MissionPage() {
               const pngs = [6, 12, 13, 14, 15, 16, 17];
               const upperPngs = [8, 9];
               const ext = pngs.includes(num) ? "png" : upperPngs.includes(num) ? "PNG" : "jpg";
+              const imageSrc = `/certificates/certificate_p${num}.${ext}`;
               return (
-                <div key={num} className="border border-gray-100 p-2 bg-white shadow-sm hover:shadow-md transition-shadow">
+                <div
+                  key={num}
+                  className="border border-gray-100 p-2 bg-white shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                  onClick={() => setSelectedImage(imageSrc)}
+                >
                   <div className="relative aspect-[1/1.4] overflow-hidden">
                     <img
-                      src={`/certificates/certificate_p${num}.${ext}`}
+                      src={imageSrc}
                       alt={`Certificate ${num}`}
                       className="w-full h-full object-contain"
                     />
@@ -55,6 +62,29 @@ export default function MissionPage() {
           </div>
         </div>
       </div>
+
+      {/* Fullscreen Image Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white hover:text-gray-300 focus:outline-none"
+            onClick={() => setSelectedImage(null)}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <img
+            src={selectedImage}
+            alt="Enlarged Certificate"
+            className="max-w-full max-h-[90vh] object-contain rounded shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </SubPageLayout>
   );
 }

@@ -25,8 +25,13 @@ export default function SubPageLayout({
   const locale = useLocale();
   const pathname = usePathname();
 
+  const normalizePath = (path: string) =>
+    path.endsWith("/") && path.length > 1 ? path.slice(0, -1) : path;
+
+  const currentPath = normalizePath(pathname);
+
   const activeItem = sideNav.find(
-    (item) => `/${locale}${item.href}` === pathname,
+    (item) => normalizePath(`/${locale}${item.href}`) === currentPath,
   );
 
   return (
@@ -51,7 +56,7 @@ export default function SubPageLayout({
           <ul className="flex flex-wrap justify-center gap-6 md:gap-4 text-[15px] font-medium py-4">
             {sideNav.map((item) => {
               const fullHref = `/${locale}${item.href}`;
-              const isActive = pathname === fullHref;
+              const isActive = currentPath === normalizePath(fullHref);
               return (
                 <li key={item.href}>
                   <Link

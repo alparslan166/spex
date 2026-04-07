@@ -11,13 +11,11 @@ export default function OutletFirePage() {
     { name: tn("appCable"), href: "/application/cable-fire" },
     { name: tn("appOutlet"), href: "/application/outlet-fire" },
     { name: tn("appBattery"), href: "/application/battery" },
+    { name: tn("appChimney"), href: "/application/chimney-fire" },
   ];
 
   return (
-    <SubPageLayout
-      title={t("techAppTitle")}
-      sideNav={sideNav}
-    >
+    <SubPageLayout title={t("techAppTitle")} sideNav={sideNav}>
       <div className="flex justify-center mb-10">
         <h3 className="heading-highlight text-3xl font-bold text-[#222]">
           {t("outletFireHeading")}

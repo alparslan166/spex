@@ -17,9 +17,18 @@ export default function SfexFRBoardPage() {
     {
       title: t("specifications.0.title"),
       items: [
-        { label: t("specifications.0.items.0.label"), value: t("specifications.0.items.0.value") },
-        { label: t("specifications.0.items.1.label"), value: t("specifications.0.items.1.value") },
-        { label: t("specifications.0.items.2.label"), value: t("specifications.0.items.2.value") },
+        {
+          label: t("specifications.0.items.0.label"),
+          value: t("specifications.0.items.0.value"),
+        },
+        {
+          label: t("specifications.0.items.1.label"),
+          value: t("specifications.0.items.1.value"),
+        },
+        {
+          label: t("specifications.0.items.2.label"),
+          value: t("specifications.0.items.2.value"),
+        },
       ],
     },
   ];
@@ -28,6 +37,7 @@ export default function SfexFRBoardPage() {
     <ProductPageTemplate
       productName={t("name")}
       subtitle={t("subtitle")}
+      videoUrl="https://www.youtube.com/embed/Ne8lVkDZzms?si=2B6D3oI_kXPxWN-X"
       topImage="/extras/extra_p1.jpg"
       overview={overview}
       features={features}

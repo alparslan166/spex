@@ -6,18 +6,13 @@ export default function SfexThermalPage() {
   const t = useTranslations("ProductDetails.sfex-thermal");
 
   const overview = [t("overview.0")];
-  const features = [
-    t("features.0"),
-    t("features.1"),
-  ];
-
-
+  const features = [t("features.0"), t("features.1")];
 
   return (
     <ProductPageTemplate
       productName={t("name")}
       subtitle={t("subtitle")}
-      videoUrl="https://www.youtube.com/embed/Rgy75Qwmw38"
+      videoUrl="https://www.youtube.com/embed/BkwJKQhTuW0?si=bcwjDlMDHnOvRbUc"
       overview={overview}
       features={features}
     />

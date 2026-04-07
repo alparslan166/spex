@@ -12,13 +12,11 @@ export default function PanelFirePage() {
     { name: tn("appCable"), href: "/application/cable-fire" },
     { name: tn("appOutlet"), href: "/application/outlet-fire" },
     { name: tn("appBattery"), href: "/application/battery" },
+    { name: tn("appChimney"), href: "/application/chimney-fire" },
   ];
 
   return (
-    <SubPageLayout
-      title={t("techAppTitle")}
-      sideNav={sideNav}
-    >
+    <SubPageLayout title={t("techAppTitle")} sideNav={sideNav}>
       <div className="flex justify-center mb-10">
         <h3 className="heading-highlight text-4xl font-poppins text-[#222]">
           {t("panelFireHeading")}
@@ -27,7 +25,11 @@ export default function PanelFirePage() {
 
       <div className="flex justify-center mb-16">
         <img
-          src={locale === 'tr' ? "/electric/3stepsolution-turkish.jpg" : "/electric/3stepsolution.png"}
+          src={
+            locale === "tr"
+              ? "/electric/3stepsolution-turkish.jpg"
+              : "/electric/3stepsolution.png"
+          }
           alt="3 Step Solution"
           className="w-full max-w-[900px] h-auto"
         />
@@ -85,7 +87,9 @@ export default function PanelFirePage() {
         </div>
 
         <div className="bg-white py-8">
-          <h4 className="text-2xl font-bold text-[#555] mb-8">{t("howItWorks")}</h4>
+          <h4 className="text-2xl font-bold text-[#555] mb-8">
+            {t("howItWorks")}
+          </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Step 1 */}
             <div className="flex flex-col">
@@ -115,7 +119,11 @@ export default function PanelFirePage() {
                 </p>
               </div>
               <img
-                src={locale === 'tr' ? "/electric/example2-turkish.jpg" : "/electric/example2.png"}
+                src={
+                  locale === "tr"
+                    ? "/electric/example2-turkish.jpg"
+                    : "/electric/example2.png"
+                }
                 alt="Installation Example 2"
                 className="w-full h-auto rounded shadow-sm"
               />
